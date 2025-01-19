@@ -6,6 +6,7 @@ from openai import OpenAI
 # you need to do a pip install of LangChain, you can just use the text splitter
 # pip install langchain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from _embed_chunks import embed_chunks
 
 load_dotenv()
 
@@ -15,7 +16,7 @@ index_name = 'pe-tax-info'
 
 # We'll use this function to embed the chunk
 # We'll also use it to embed the question for query
-def embed_chunk(text):
+def embed_chunks(text):
 
     response = oa.embeddings.create(
         input=text,

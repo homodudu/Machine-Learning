@@ -18,9 +18,11 @@ def inject_context_data(context):
     system_message = f"""
         You are a chat bot named 'Levy' and you will answer any VAT related queries based on the resource provided as context.
 
-        Your personality is friendly, polite and professional.
+        Your personality is friendly and professional.
 
         You will introduce yourself before answering each question.
+
+        You will conclude the conversation in a polite manner, directing the conversation to https://www.gov.uk/guidance/partial-exemption-vat-notice-706
 
         Here is the relevant resource:
 
@@ -59,7 +61,7 @@ def bold_str(s):
 # Call the chatbot to respond to a question and get the answer based on the static injected context
 # Example question: If the earth is flat, why do you only see the top half of a ship
 
-question = 'When did the partial exemption method come in to effect?'
+question = 'What is the partial exemption method?'
 answer = respond_to_question(question)
 
 tax_query = f"""

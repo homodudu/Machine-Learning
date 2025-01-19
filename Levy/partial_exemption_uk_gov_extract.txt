@@ -1,0 +1,1239 @@
+Menu
+HomeMoneyDealing with HMRC
+Guidance
+Partial exemption (VAT Notice 706)
+Find out about partial exemption and the methods and calculations to use to see how much input tax you can recover.
+
+From:
+HM Revenue & Customs
+Published
+16 June 2011
+Last updated
+14 September 2023 — See all updates
+Get emails about this page
+Contents
+1. Overview
+2. Partial exemption in general
+3. How to calculate how much input tax you can recover
+4. The standard method
+5. The standard method override
+6. Special methods
+7. Including non-business use within special methods
+8. Special method override notices
+9. Input tax relating to ‘foreign’ and ‘specified’ supplies
+10. Can you recover input tax relating to share issues and share sales
+11. The de minimis rule
+12. Annual adjustments
+13. Intended use of supplies received and changes of intention
+14. Belated claims to input tax and capping
+15. Special circumstances which have a bearing on the partial exemption rules
+16. Glossary
+Appendix 1 — declaration template
+Appendix 2 — Guidance for businesses seeking approval for a partial exemption special method
+Appendix 3 — Services and related goods used partly to make incidental financial supplies
+Your rights and obligations
+Help us improve this notice
+Putting things right
+How HMRC uses your information
+Print this page
+From 1 August 2022, you can no longer send an email for a special method request.
+
+Find out more about how to apply and prepare your partial exemption special method request forms.
+
+1. Overview
+1.1 What this notice is about
+A business is partly exempt if it makes, or intends to make, both taxable and exempt supplies and incurs tax on costs which relate to both.
+
+If your business is partly exempt, you may not be able to recover all your input tax. You will have to use a partial exemption method to work out how much input tax you can recover. This notice explains:
+
+what partial exemption is
+the partial exemption methods available to you
+the calculations and input tax adjustments you must make
+It also explains when you can recover all of your input tax even though part of it relates to exempt supplies. The impact of partial exemption on some specific business situations is also explained.
+
+1.2 Laws that cover this notice
+The primary UK VAT law concerned with the right to deduct (recover) input tax and partial exemption is contained in sections 24 to 26 of the Value Added Tax Act 1994.
+
+This is supplemented by more detailed rules in regulations 99 to 110 of the Value Added Tax Regulations 1995.
+
+2. Partial exemption in general
+2.1 The definition of ‘partial exemption’
+The basic rules of VAT are set out in VAT guide (VAT Notice 700). The notice explains that taxable supplies are supplies of goods or services that are:
+
+made in the UK or the Isle of Man
+made by a taxable person
+made in the course or furtherance of business
+not specifically exempted — if a supply is specifically exempted, then it’s termed an exempt supply
+Most taxable supplies require VAT to be charged at the standard rate, but some taxable supplies will attract VAT at the reduced or zero rate.
+
+As a VAT-registered business, you can recover the VAT on your purchases which relates to taxable supplies that you make, or intend to make. Read paragraph 2.4 for information about ‘blocked’ input tax.
+
+Supplies that are made outside the UK that would be taxable if in the UK and certain exempt supplies to non-UK customers also give the right to recover VAT, but there are special rules (see section 9). In principle, you cannot recover VAT that relates to any exempt supplies, although you may be able to if the VAT is below certain limits. Read section 11, which explains this in more detail.
+
+If you make, or intend to make, both taxable and exempt supplies and incur input tax that relates to both kinds of supply, you’re classified as ‘partly exempt’. Partly exempt businesses must undertake calculations which work out how much input tax they may recover.
+
+2.2 VAT on non-business activities
+VAT you incur on purchases that are used exclusively for non-business purposes is not input tax and you cannot recover it.
+
+VAT on purchases that you use partly for business purposes and partly for non-business purposes must normally be apportioned between business and non-business use before dealing with partial exemption.
+
+VAT guide (VAT Notice 700) explains the difference between business and non-business activities and contains guidance on working out how much of the VAT you incur is input tax. The law does not specify a method of apportionment for costs incurred with mixed business and private or non-business use. The only requirement is that the result is fair and reasonable.
+
+From 1 January 2011 HMRC can approve a business or non-business method of apportionment (not including private use) but not if you are partly exempt. However, if you’re partly exempt, HMRC can approve use of a single method covering both your business or non-business (other than private) and your partial exemption calculations. This is to save the cost of seeking approval of 2 separate methods and also helps to make sure a fair recovery of VAT overall as the calculations can be considered in their entirety.
+
+Also, from 1 January 2011, the Capital Goods Scheme and the clawback or payback rules (see section 13) have been extended to adjust non-business (including private) use.
+
+2.3 The basic rules
+You can normally recover input tax that relates to:
+
+taxable supplies you make
+supplies you make outside the UK that would be taxable supplies if made in the UK, known as ‘foreign’ supplies (see section 9)
+certain exempt supplies you make — these are specified by Treasury Order and are known as ‘specified’ supplies (see section 9)
+These supplies are known as supplies with the ‘right to deduct’ input tax.
+
+For the purposes of this notice, input tax relating to these supplies will be called ‘taxable input tax’.
+
+Similarly, input tax relating to the following supplies is called ‘exempt input tax’ and cannot normally be recovered:
+
+exempt supplies
+supplies made outside the UK that would be exempt supplies if made in the UK, but which are not specified by Treasury Order
+When you incur input tax on purchases that relate to both taxable and exempt supplies, you can only recover the input tax to the extent that the purchases are used to make taxable supplies.
+
+2.4 ‘Blocked’ input tax
+If you incur input tax on certain items, the input tax is always non-recoverable. Examples include certain cars and business entertainment (provided to anyone other than an employee or an overseas customer). This input tax is commonly known as ‘blocked’ input tax. You can find out more about this in VAT guide (VAT Notice 700).
+
+2.5 When you can recover input tax
+The normal rules governing the evidence you need to recover input tax and the time when you can make your claim can be found in VAT guide (VAT Notice 700). Usually, you have the right to claim recovery of input tax in the VAT Return for the accounting period in which the tax was charged to you, subject to holding the necessary evidence. If for any reason you need to make a belated claim to input tax you should refer to paragraph 14.1.
+
+2.6 Records and accounts you need to keep
+When you’re registered for VAT you’re required by law to keep the records and accounts specified in VAT guide (VAT Notice 700). For partial exemption purposes your records must also enable you to work out the amount of input tax you can recover in each tax period and in each tax year (see paragraph 12.2). You must also keep any other records that you use to calculate your recoverable input tax.
+
+2.7 The main terms in partial exemption
+If you’re new to partial exemption you may find the glossary of main terms in section 16 useful.
+
+3. How to calculate how much input tax you can recover
+3.1 The main steps in recovering input tax
+There are 3 main steps to calculating how much input tax you can recover. These are:
+
+step 1 — direct attribution of input tax
+step 2 — apportionment of residual input tax
+step 3 — completion of an annual adjustment
+Steps 1 and 2 must usually be carried out for each VAT Return with step 3 undertaken at the end of each longer period, see section 4 and section 11 for circumstances where different rules apply. Also see paragraph 12.3 for more information on longer periods.
+
+3.2 Direct attribution of input tax
+Direct attribution of input tax is the identification of VAT incurred on purchases that you use, or intend to use exclusively in making:
+
+taxable supplies or other supplies that carry the right to deduct
+exempt supplies
+This process should be carried out on the basis of the use you make, or intend to make of those purchases. Attribution is undertaken at the time you receive the purchases.
+
+3.3 Directly attributed input tax you can recover
+You can recover, in full, input tax on purchases that are used, or to be used, exclusively in making taxable supplies or other supplies that carry the right to deduct.
+
+Unless you meet the tests set out in section 11 of this notice, you cannot recover any of the input tax on purchases that are used, or to be used, exclusively in making exempt supplies or other supplies in respect of which input tax is non-recoverable.
+
+3.4 Residual input tax
+Residual input tax is input tax on purchases used to make both taxable and exempt supplies. That could be because it’s used directly to make both taxable and exempt supplies or because it’s an overhead of the business.
+
+3.5 Residual input tax you can recover
+You can recover the amount of your residual input tax that relates to your taxable supplies and other supplies that carry the right to deduct. This amount is determined by a partial exemption calculation, details of which are explained in section 4, if you use the standard method, or section 6 if you use a special method. If you make ‘foreign’ or ‘specified’ supplies you should also read section 9 of this notice.
+
+3.6 Total amount of input tax that you can recover
+You can recover the input tax directly attributable to taxable supplies and the recoverable portion of residual input tax.
+
+3.7 Input tax you cannot recover
+You normally cannot recover the input tax directly attributable to exempt supplies or the exempt portion of residual input tax. However, if you incur only small amounts of exempt input tax you may be able to recover them under the de minimis rules, see section 11.
+
+You may also find the following Flowchart of what input tax can be recovered - (VAT Notice 706) (PDF, 57.3 KB, 1 page) useful.
+
+3.8 Annual adjustment
+An annual adjustment is a calculation carried out at the end of a longer period, usually your partial exemption tax year. It will take into account any differences in the percentage of recoverable residual input tax that may occur between tax periods in the same longer period. This is explained in section 12.
+
+3.9 The different partial exemption methods
+There are 2 types of partial exemption methods that you can use:
+
+the standard method (see section 4) which is specified in the law and is suitable for most smaller businesses
+a special method (see section 6) which is devised by you to reflect your unique business circumstances
+You do not need our approval to use the standard method unless you currently operate a special method, but you must get our approval to use or stop using a special method.
+
+A partial exemption method must produce a result which enables you to recover a proportion of input tax which fairly reflects the extent to which the purchases on which it was incurred are used to make taxable supplies (and other supplies with the right to deduct). It should be easy for you to operate and for HMRC to check. Such a method is described as ‘fair and reasonable’.
+
+3.10 What happens if your partial exemption method is not ‘fair and reasonable’
+If you’re using the standard method, you should consider whether:
+
+the standard method override is applicable — see section 5)
+you should apply to HMRC to use an alternative method (section 6)
+If you’re using a special method, you should consider whether:
+
+you should apply to HMRC to use an alternative method (section 6)
+a special method override notice is required — (see section 8)
+Paragraph 6.9 explains when we have the power to make you change your method.
+
+4. The standard method
+4.1 The definition of the ‘standard method’
+The standard method is used to calculate how much of your residual input tax is attributable to taxable supplies and therefore recoverable. You must use the standard method unless HMRC has given approval for you to operate a special method (see section 6).
+
+4.2 When the standard method is acceptable
+The standard method is acceptable provided it results in a fair recovery of input tax. Generally, it will achieve this, particularly for smaller-sized businesses but if you do not consider that the standard method provides a fair and reasonable result for your business, you should seek approval of a special method (section 6).
+
+4.3 How the standard method works
+In most cases, the standard method determines a recoverable percentage of residual input tax using the Standard method calculation as follows.
+
+Value of taxable supplies in the period (excluding VAT) ÷ total value of supplies in the period (excluding VAT) × 100 = recoverable percentage of residual input tax
+
+4.4 Simplification of the standard method
+On 1 April 2009, 4 changes were made to simplify the standard method and increase flexibility for businesses. The first 3 of these changes are optional, the fourth change will only be relevant if you make ‘foreign’ or ‘specified’ supplies. The changes are:
+
+(a) In-year provisional recovery rate (see paragraph 4.5)
+
+(b) Early annual adjustment (see paragraph 12.6)
+
+(c) Use-based option for new partly exempt businesses (see paragraph 4.6) and
+
+(d) Widening the scope of the standard method (see paragraph 9.4)
+
+4.5 In-year provisional recovery rate
+Before 1 April 2009, you were required to calculate separate percentages of residual input tax you could recover in each VAT Return. These recovery percentages were provisional and at the end of the longer period, you had to calculate a recovery percentage for the whole year, which you then used to finalise the amount of recoverable input tax as part of your annual adjustment (see section 12).
+
+For VAT Returns for periods beginning on or after 1 April 2009, you can use your previous year’s recovery percentage to determine your provisional recovery of residual input tax in each period. This is then finalised by way of an annual adjustment. The finalised annual recovery percentage is then used as the provisional recovery percentage for the next year and so on, saving the need to calculate separate recovery percentages for each period.
+
+To use this option you must have been required to carry out an annual adjustment in your previous year (otherwise you will not have an annual adjustment recovery percentage). Therefore, if you were not required to carry out an annual adjustment in your previous year you will still need to calculate separate recovery percentages for each period in your current year. The only other condition is that you must consistently apply either the new or the old rules throughout any given tax year.
+
+You may operate the old rules and calculate separate recovery percentages for each of your VAT Returns if you prefer.
+
+If you use the ‘in-year provisional recovery rate’ you must use your previous year’s recovery percentage figure even if you were allowed to recover all of your input tax under the de minimis provisions (see section 11).
+
+4.6 Use-based option for new partly exempt businesses
+Sometimes the standard method will not produce a fair and reasonable result for new businesses in the early periods although it will when the businesses are fully up and running. Those businesses are able to use an alternative calculation without permission from HMRC, saving the need for a new partly exempt business to seek approval of a special method. This calculation can be adopted, during:
+
+your ‘registration period’ — this is the period running from the date you were first registered for VAT to the day before the start of your first tax year (normally 31 March, 30 April or 31 May depending on the periods covered by your VAT Returns)
+your first tax year (normally the first period of 12 months commencing on 1 April, 1 May or 1 June following the end of your registration period) provided you did not incur input tax relating to exempt supplies during your registration period
+any tax year, provided you did not incur input tax relating to exempt supplies in your previous tax year
+Once this period has expired, you must revert to using the normal ‘standard method’ calculation based on the values of your supplies.
+
+This change is optional and you may still recover input tax using the normal ‘standard method’ calculation based on the values of your supplies (unless you have incurred input tax relating to supplies of financial instruments or make supplies from an establishment located outside the UK — see paragraph 9.4) or seek approval of a special method if you prefer.
+
+4.7 Rounding
+The recovery percentages calculated under the standard method must be rounded up to the next whole number unless you incur more than £400,000 of residual input tax each month on average in which case you must round to 2 decimal places. Rounding up does not apply in certain circumstances for ‘foreign’ and ‘specified’ supplies.
+
+4.8 Supplies that should be excluded from the standard method
+Some supplies must not be included in the standard method calculation as they can be distortive. Therefore, you need to exclude the value of the following supplies, irrespective of whether they are taxable or exempt:
+
+supplies of capital goods (assets) you have used for the purposes of your business whether or not they are subject to the Capital Goods Scheme (see paragraph 13.18) for more information on the Capital Goods Scheme)
+incidental financial or real estate transactions, for instance, interest received on a bank account — these arise merely as a consequence of your normal business activity rather than being a separate aim in their own right
+the value of any supply that you make to yourself (a self-supply) for example the value of a supply that you account for under the reverse charge procedure (see paragraph 15.8 for more information on reverse charges)
+prior to 1 April 2009, all ‘foreign’ and ‘specified’ supplies (see section 9) were dealt with outside of the standard method calculation — from 1 April 2009 the only such supplies dealt with outside of the standard method are supplies of financial instruments and supplies from establishments located outside the UK — the related input tax for these is recovered on the basis of use (see paragraph 9.4)
+The value of transactions which are not supplies for VAT purposes such as the transfer of a business as a going concern (TOGC) and the issue by your company of new shares in your company to raise capital should also be excluded.
+
+4.9 How to calculate the input tax you can recover using the standard method
+To calculate the input tax you can recover using the standard method calculation you will need to take the following steps (also see paragraph 4.4) for simplifications to the standard method which increase flexibility). Remember that the calculation takes place after you have excluded non-business and ‘blocked’ VAT.
+
+Identify how much of your input tax is directly attributable to your taxable supplies.
+
+ 
+Identify how much of your input tax is directly attributable to your exempt supplies.
+
+ 
+Identify how much of your input tax is residual. (This will be the total value of input tax less the input tax directly attributed in steps 1 and 2.)
+
+ 
+Calculate the recoverable percentage as described in paragraph 4.3 (making sure to exclude any items covered in paragraph 4.8.
+
+ 
+Apply the percentage at step 4 (see paragraph 4.7 for rounding rules) to your residual input tax. The value produced is the amount of your residual input tax that can be recovered.
+
+ 
+Add together your directly attributable taxable input tax at step 1 and the amount of recoverable residual input tax at step 5. This is your total taxable input tax and can be recovered.
+
+ 
+Add together your directly attributable exempt input tax at step 2 and the amount of residual input tax that was not attributed to taxable supplies at step 5. This is your total exempt input tax and cannot normally be recovered at all but the figures will be needed so that you can calculate whether you are within the de minimis limits.
+
+You may find the example at paragraph 4.11 useful to see how these calculations work.
+
+4.10 When you can recover your exempt input tax
+You cannot normally recover any exempt input tax. However, if your exempt input tax, calculated at step 7 of paragraph 4.9 is below the de minimis limits, you can be treated as fully taxable and recover all your exempt input tax. Read section 11 for information about the de minimis limits.
+
+4.11 Example of a calculation using the standard method
+Input tax that relates exclusively to taxable supplies = £12,500
+Input tax that relates exclusively to exempt supplies = £7,500
+Input tax on business entertainment = £500
+Residual input tax = £15,000
+Value (excluding VAT) of all taxable supplies = £135,000
+Value of exempt supplies = £55,000
+Value (excluding VAT) of a machine used in the business and subsequently sold = £20,000
+
+Input tax incurred in relation to business entertainment is blocked (see paragraph 2.4). This input tax must be excluded before you do your calculation.
+
+Capital items are excluded because their inclusion would distort the calculation (see paragraph 4.8). Therefore, the value of capital items must be excluded from the calculation.
+
+The Recoverable percentage of residual input tax (VAT Notice 706) (PDF, 20 KB, 1 page).
+
+This should be rounded up to 68%, as stated in paragraph 4.7.
+
+The recoverable amount of residual input tax is therefore:
+£15,000 × 68% = £10,200
+
+Recoverable amount of residual input tax (VAT Notice 706) (PDF, 36.5 KB, 1 page).
+
+5. The standard method override
+5.1 The meaning of the ‘standard method override’
+The standard method override deals with circumstances where the standard method does not produce a fair and reasonable deduction of input tax.
+
+The override requires you to make an adjustment when the input tax deducted during the tax year using the standard method differs substantially (see paragraph 5.2) from a deduction based on the use or intended use of the purchases received by you in making your taxable supplies.
+
+You will normally have to carry out the annual adjustment (see section 12) to establish whether the deduction is substantial or not.
+
+5.2 The meaning of ‘substantial’
+A difference is substantial if it exceeds:
+
+£50,000
+50% of the residual input tax incurred and £25,000
+5.3 Circumstances when the override will apply
+The override will only apply where the standard method produces a result which does not fairly reflect the extent to which the purchases on which the VAT is incurred are used to make taxable supplies.
+
+5.4 Will you be affected by the override
+You will only be subject to the override if:
+
+you’re partly exempt and apply the standard method
+your residual input tax is more than £50,000 per year (£25,000 per year for group undertakings not members of the same VAT group) — these values are adjusted in proportion for periods of less than a year
+the standard method does not give a fair and reasonable reflection of use
+Even then, you will only have to make an adjustment if there is a substantial difference between the input tax deducted and the amount deductible on the basis of use.
+
+The override does not apply:
+
+if you carried out your annual adjustment on the basis of use (see paragraph 12.4)
+to any input tax you were required to attribute on the basis of use
+5.5 Examples of when the override may apply
+Some examples of where the standard method may break down and the override may apply are when:
+
+costs are incurred in one year which will not result in supplies until a later year
+high value transactions are undertaken which do not consume inputs to an extent significantly greater than transactions of a lower value
+there are different business units which make different supplies and use costs in different ways
+costs are incurred which relate to an intended supply which never comes about
+5.6 How do you apply the override
+To apply the override you must:
+
+calculate the difference between the input tax deductible under the standard method and that deductible according to use
+account for this amount in the same VAT period as your annual adjustment (see section 12).
+However, when a business does not carry out an annual adjustment (because it first becomes partly exempt in the last period of a tax year), any override adjustment must be accounted for on the next VAT Return.
+
+When a registration is cancelled, any override adjustment must be accounted for on the final VAT Return.
+
+5.7 How to calculate the extent of use
+The override incorporates the concept of ‘fair and reasonable’ even though the regulations do not say so explicitly. All UK partial exemption is based on section 26 of the VAT Act 1994, which requires that regulations exist to provide a fair and reasonable deduction of input tax.
+
+Any calculation that fairly and reasonably reflects the use or intended use of your purchases in making taxable supplies will be acceptable. The easiest way to prepare a calculation is to consider why the standard method breaks down and to correct for it.
+
+Provided your residual costs (those relating to both taxable and exempt supplies) are used in proportion to the values of taxable and exempt supplies made in the period in which they are incurred, the standard method will give a deduction that reflects use. However, any costs that are not used in proportion to the values of supplies made can be dealt with separately from the standard method calculation.
+
+5.8 The de minimis rules mentioned in section 11 applying to the override
+If after an override adjustment the input tax attributed to exempt supplies then comes within the de minimis limit, you can deduct all of your input tax for that period.
+
+5.9 Should you keep evidence of your use-based calculation
+You must keep evidence in support of an override adjustment. Where an adjustment is not required details of any calculations carried out that support this should be kept.
+
+5.10 If you overlook the override adjustment
+Full details of how to correct errors can be found in how to correct VAT errors and make adjustments or claims (VAT Notice 700/45.
+
+5.11 The effect of the override on the Capital Goods Scheme
+If you incur input tax on an item subject to the Capital Goods Scheme (see paragraph 13.18) within a period covered by the override, you must include that input tax when considering whether the override applies. If the override does apply, you must consider the use or intended use of the capital item in determining if there’s a substantial difference.
+
+Capital Goods Scheme adjustments must not be counted as input tax when determining whether the override applies. However, where the override does apply to a longer period which is also a subsequent Capital Goods Scheme interval, the Capital Goods Scheme adjustment may be affected if the standard method is used as the basis of adjustment for the scheme.
+
+5.12 The effect of the override on transfers of a going concern
+The use of purchases by transferees or ‘successors’ must be considered in certain circumstances. If, at the time input tax is incurred by a business, it is intended to transfer those assets as a going concern, any intended exempt use by the purchaser or his successor will also result in a restriction of input tax.
+
+Transfer in this context means transfer of a business as a going concern, where the sale is treated as neither a supply of goods nor a supply of services by reference to an order under VAT Act 1994 Section 5(3).
+
+Successor in this context includes a reference to a successor’s successor through any number of transfers.
+
+5.13 If you have to use the override on a regular basis
+If this is the case you may decide that it would be better to apply for approval to use a special method (see section 6).
+
+6. Special methods
+6.1 The definition of a ‘special method’
+A special method is any calculation, other than the standard method, that enables you to calculate how much of your input tax you may recover. It must only allow you to recover the input tax on your purchases to the extent that you use these purchases to make taxable rather than exempt supplies now or in the future.
+
+Supplies that are made outside the UK that would be taxable if in the UK and certain exempt supplies to non-UK customers also gives the right to recover input tax, but there are special rules (see section 9).
+
+A special method is unique to your business, and you can develop it to deal with your particular business circumstances. However, you must not use a special method, or change a special method that you are already using, without our written approval.
+
+With effect from 1 January 2011 you may apply for a special method, known as a ‘combined method’. This combines your business or non-business (other than private use) and partial exemption calculations. See paragraph 7.1 for more information.
+
+6.2 Get approval for a special method
+You cannot change your method without our prior approval. You must continue to use your current method, whether that is the standard method or a special method, until we approve or direct the use of another method or direct termination of its use.
+
+You can get approval for a special method by using the online service.
+
+If you are unable to use the online service, contact VAT Written Enquiries team by post.
+
+You must explain clearly how your proposed method will work, you should see Appendix 2 in this guide.
+
+When you propose a special method you must include a declaration that the method is fair from its effective date of application, and for the foreseeable future so that from its effective date a fair amount of input tax is recovered. If we subsequently find your declaration to be incorrect we may serve a special method override notice (see section 8 for more information about the special method override notice) to override the method so that from its effective date input tax would be recovered according to the use of purchases in making taxable supplies. A declaration is incorrect if 2 conditions are not met, the:
+
+method does not produce a fair and reasonable attribution of input tax to taxable supplies resulting in an unfair over-recovery of input tax
+person signing the declaration knew or ought reasonably to have known this at the time they made the declaration
+If you apply to change your existing special method this is an application for a new method and you will also have to provide a declaration.
+
+The declaration can be made using the template at Appendix 1.
+
+All approvals and directions of special methods must be given in writing by HMRC.
+
+If we decide to approve your method, we will set it out in a format which includes standard terms and conditions. A covering letter will be sent to you with the method asking you to check that it accurately reflects your proposal. Unless you raise concerns within 30 days we will assume that you’re content with the approved method.
+
+If we decide not to approve your method we will write to you explaining the reasons why, and where appropriate, invite you to make further or modified proposals. If you make a further or modified proposal you will need to make a new declaration. If there are specific aspects of the method that you need to discuss, you may do so before making a firm proposal, saving the need for an additional declaration.
+
+You will usually be allowed to use the new method from the start of the tax year in which the declaration to the written application (being the approved application) is received.
+
+See section 8 about the special method override notice.
+
+6.3 What a special method can contain
+A special method is unique to your business and can contain any calculations or stages that are needed to make sure it is fair and reasonable. All special methods should:
+
+reflect all your business activities
+provide for direct attribution of input tax to taxable supplies
+provide for direct attribution of input tax to exempt supplies
+identify residual input tax
+calculate the element of residual input tax that relates to taxable supplies
+calculate the element of residual input tax that relates to exempt supplies
+allow you to determine the total input tax that you can recover
+6.4 Dealing with different parts of your business separately in your special method
+If a method calculates a separate recovery rate for each sector it is commonly referred to as a ‘sectorised’ method. Partial exemption sectors might arise naturally from the way your business organises itself, for example, if your business has discrete areas, activities, or even accounting centres, in which you use your input tax differently. This is most likely where your business is large and complex, or where your business consists of a VAT group of separate businesses.
+
+Very often, the best way to get an accurate partial exemption recovery method in the least burdensome way is to base it on your internal cost accounting system used for management reporting purposes. However, there are circumstances where this is inappropriate, for example, where costs are reported on a marginal basis. If you propose a method based on internal cost accounting, you will need to explain the kind of system being operated and what controls are in place to make sure that it’s accurate.
+
+6.5 How to determine the recovery rate for residual input tax
+When you use the standard method the percentage recovery rate for residual input tax is calculated using the values of supplies made by your business. When you use a special method you can determine your percentage recovery rate using other allocations and apportionments. You can even use a different type of calculation for each sector if you have a ‘sectorised’ method.
+
+6.6 Examples of allocations and apportionments
+Some examples are:
+
+output values
+numbers of transactions
+staff time or numbers
+inputs or input tax
+floor area
+costs allocations
+management accounts
+This is not a full list. If you use any of the examples, you must make sure that the resulting calculation produces a result that is a true reflection of the use to which your input tax is put. The most common apportionment methods are output values and number of transactions, although some of the others can work in some circumstances. However they are more common as allocation methods between business sectors. More information can be found in PE30000 — VAT partial exemption guidance.
+
+6.7 Rounding in special methods
+You must calculate the percentage recovery rate produced in your special method to 2 decimal places.
+
+6.8 Changes in your circumstances
+If you operate a special method and there’s any change in your business circumstances, or if you’re a VAT group and there’s any change in the group membership that may have a significant impact on the amount of input tax you can claim, it’s important that you tell us immediately.
+
+If your method is no longer suitable for your business, you should propose an alternative method. If you fail to propose a suitable method, we may direct you to use a specified method. In some circumstances a special method override notice (see section 8) may need to be served.
+
+6.9 HMRC imposing a method
+We have the power to direct a business to use a particular method or to stop using an existing special method. These powers are only used in circumstances where we are unable to identify a mutually satisfactory method, or where the VAT system is being abused.
+
+Directions are made in writing and apply from the date they’re given, or from a specified future date. If you disagree with the issue of a direction you can ask for either of the following:
+
+a review of our decision
+an appeal to be heard by an independent tribunal
+Read more information about what you can do if you disagree and how to get a review of an HMRC decision.
+
+6.10 Annual adjustments when using special methods
+You have to follow a similar procedure to the standard method to calculate the annual adjustment for a special method (see section 12).
+
+6.11 Gaps in special methods
+A special method is said to have a ‘gap’ whenever it fails to specify how to deal with an amount of residual input tax. Gaps most commonly arise when business circumstances change after methods have been approved.
+
+Residual input tax falling into a ‘gap’ is to be recovered to the extent that the purchases on which the input tax is incurred are used in making taxable supplies. Where the treatment of input tax on purchases is only partly covered by the method, that is, part of the input tax falls into the ‘gap’, only that part of the input tax not covered by the method comes under these rules.
+
+This does not mean that we think that methods with ‘gaps’ are acceptable but merely sets out how to cope with gaps if they arise in future. Once a gap has arisen, we expect that you will make suitable proposals for a new method that takes account of the gap and any other known faults in your current method.
+
+7. Including non-business use within special methods
+7.1 The combined business or non-business partial exemption method
+The default position for determining how much VAT is deductible on costs is a 2-step process as mentioned in paragraph 2.2. Step 1 requires you to select your own fair and reasonable business or non-business calculation. Step 2 requires you to determine recoverable VAT in accordance with a partial exemption method, assuming you’re partly exempt — either the standard method or, alternatively, a special method which must be approved by HMRC.
+
+From 1 January 2011, HMRC is now able to approve a method covering business or non-business calculations. If you’re also required to carry out partial exemption calculations, HMRC can also approve use of one single agreement covering the business’s business or non-business and partial exemption calculations. This is known as the combined method.
+
+7.2 Can you benefit from a combined method
+The combined method is available if you need to carry out only business or non-business calculations (excluding apportionments involving private use) or if you need to carry out business or non-business (excluding apportionments involving private use) and partial exemption calculations. Therefore, it will mainly benefit charities and educational bodies.
+
+7.3 The combined method and private use
+In deciding whether to implement the combined method, it was necessary to consider costs and benefits as well as the impact on HMRC resources. While there were clear benefits for introducing the combined method to deal with business or non-business apportionments not involving private use, the case for including private use apportionments was less clear. Private use apportionments therefore continue to be calculated on a fair and reasonable basis.
+
+7.4 The rules for the combined method
+Most of the rules that apply to special methods (see PE30000 — VAT partial exemption guidance) and section 6 of this notice also apply to the combined method. For example, it’s necessary for you to declare that your proposed combined method is fair and reasonable before HMRC can consider giving approval for business or non-business calculations to be subject to an annual adjustment. However, there are some special rules that apply to combined methods which are covered in the following paragraphs.
+
+7.5 What must the combined method cover
+The combined method must cover all your VAT apportionments apart from those involving private use and certain partial exemption calculations that are always determined on the basis of use.
+
+7.6 Approval by HMRC of separate business or non-business and partial exemption methods
+Approval will not be given if you are partly exempt. In these circumstances, where approval of a method for business or non-business calculations is sought, it must also cover partial exemption calculations (excluding apportionments referred to in paragraph 7.5). This is to save the cost of seeking approval of 2 separate methods and also helps to make sure a fair recovery of VAT overall as the calculations can be considered in their entirety.
+
+7.7 Approval by HMRC of a single business or non-business method
+Approval will be given, provided that you have not incurred any VAT on costs that relate to exempt supplies (exempt input tax) in your current tax year or immediately preceding tax year (or registration period), that is you’re ‘fully taxable’.
+
+7.8 The result to a single business or non-business method if you become partly exempt
+A special method override notice (see section 8) will automatically apply to the method that requires apportionments covered by the combined method (see paragraph 7.5) to be recovered on a fair and reasonable basis from the date exempt input tax is first incurred. This gives you time to prepare an alternative proposal for a combined method and makes sure a fair recovery of VAT in the meantime.
+
+7.9 Identifying separately VAT relating to exempt supplies
+One of the benefits of a combined method is that you will be able to amalgamate your business or non-business and partial exemption calculations, which cuts down on the number of calculations and helps reduce costs.
+
+7.10 Can you benefit from the partial exemption de minimis rules if you use a combined method
+The legislation does not allow you to benefit from the partial exemption de minimis rules if you use a combined method. This is because the de minimis rules might require you to unpick your business or non-business and partial exemption calculations which goes against the objective of the combined method to cut down on the number of calculations and reduce compliance costs.
+
+There is no de minimis limit for non-business VAT.
+
+7.11 The date that HMRC will approve a combined method
+HMRC can approve a combined method that covers VAT incurred on or after 1 January 2011. However, to minimise impact on HMRC resources and delays in approving methods, you may wish to delay seeking approval for a combined method until you would next routinely update your existing partial exemption special method.
+
+7.12 Validity of existing business or non-business agreements
+Current agreements remain valid. However, you’re advised to seek approval for a combined method when you would next routinely update your existing business or non-business agreement.
+
+8. Special method override notices
+8.1 When will the special method override apply
+The special method override notice allows you or us to correct the results of an unfair special method until a replacement method is implemented.
+
+The override affects only partly exempt businesses that operate a partial exemption special method and where HMRC has:
+
+served a special method override notice on the business
+approved a special method override notice served by the business
+A special method override notice is effective only from a current or future date, except in the special case where it arises in respect of a method where the declaration was incorrect (see paragraph 6.2 for more information on the declaration).
+
+8.2 When a special method override notice might be served
+A special method override notice can only be served when the method in use is no longer fair and reasonable. This might be because there’s been a change in your circumstances or there are weaknesses in your method that may lead to an unfair recovery of input tax.
+
+Preparing a new method can take time, especially for a large and complex business. As this could result in either you or us losing out, the special method override notice gives either party the ability to correct the results of the special method in place until a replacement method can be agreed and implemented.
+
+For example, it might be appropriate for you to serve a special method override notice if your business activities have changed so that your existing special method is unfair but you have insufficient time to prepare proposals for a fair alternative before the year end.
+
+8.3 When HMRC will serve or approve a special method override notice
+We will only serve or approve a special method override notice if we have clear evidence that your current special method does not fairly and reasonably reflect your use of purchases in making taxable supplies. We will also need to be satisfied that preparing a replacement will not be agreed quickly and the direction of a special method (paragraph 6.9) is not appropriate.
+
+A special Method override notice will also be used in cases of an incorrect declaration (see paragraph 6.2).
+
+If you were fully taxable and have an approved business or non-business method (see paragraph 2.2) and you become partly exempt, an override will automatically apply from the date exempt input tax is first incurred. This gives time to prepare an alternative proposal for a combined method and also makes sure a fair recovery of VAT in the meantime.
+
+8.4 Details that a special method override notice should contain
+A special method override notice must specify:
+
+that it is a special method override notice
+the date from which it takes effect
+the reasons why the result of the current special method does not fairly and reasonably reflect the use of purchases in making taxable supplies
+An example of a special method override notice showing the minimum details you should include is shown at paragraph 8.7.
+
+When HMRC approves a special method override notice served by a business this will be done in writing.
+
+8.5 What must you do once a special method override notice has been served
+Once a special method override notice has been served you must, for each VAT Return period beginning on or after the date specified in the special method override notice, carry out the following calculation:
+
+determine the amount of deductible VAT using your current special method
+determine the amount of deductible VAT in accordance with the use of purchases in making taxable supplies
+account for any difference between these amounts
+You must also do this in your annual adjustment. If the date specified in the special method override notice falls part way through your tax year or longer period, you must carry out this calculation at the year-end in relation to the part of the year falling after the date specified in the special method override notice.
+
+8.6 Expiry date of a special method override notice
+A special method override notice will expire when a new special method has been approved or directed, or HMRC allow or direct a business to use the standard method.
+
+8.7 Example of a special method override notice
+An example of a special method override notice — it shows the minimum details that are required to be included.
+Name, address and VAT registration number of business
+
+Special method override notice
+
+Date of service: (day, month, year)
+
+Reasons for serving the Notice:
+
+(State detailed reasons why the method is not fair and reasonable, for example distortions, changes in circumstances)
+
+This Notice takes effect from (state current or future date in day, month, year format)
+8.8 Input tax that the special method override notice covers
+The special method override notice covers all the input tax incurred by the business but when HMRC serves a special method override notice it will indicate the areas which in their view require adjustments, although the business should consider all aspects of the business when making an adjustment.
+
+9. Input tax relating to ‘foreign’ and ‘specified’ supplies
+9.1 General position
+Paragraph 2.3 of this notice explains that, in addition to taxable supplies made in the UK, you can recover input tax relating to certain other supplies known as ‘foreign’ and ‘specified’ supplies. These are supplies referred to as ‘supplies that carry the right to deduct’.
+
+This section explains what we mean by ‘foreign’ and ‘specified’ supplies and the extent to which you can recover related input tax.
+
+9.2 Supplies that allow you to recover input tax
+In addition to taxable supplies made in the UK, you can recover input tax relating to:
+
+(a) supplies made outside the UK that would be taxable if made in the UK — ‘foreign’ supplies and
+
+(b) ‘specified’ supplies as defined in the VAT (Input Tax)(Specified Supplies) Order 1999. These are:
+
+financial services supplied to persons belonging outside the UK or directly related to an export of goods
+insurance services supplied to persons belonging outside the UK or directly related to an export of goods
+the making of arrangements for these specified supplies
+You can find out more concerning when supplies of services are made outside the UK in Place of supply of services (VAT Notice 741A).
+
+Certain supplies of investment gold are also included in the Specified Supplies Order. The method for recovery of any related input tax is dealt with in Gold imports and exports (VAT Notice 701/21).
+
+9.3 How to work out how much input tax you can recover
+Where you incur input tax on purchases that are exclusively used (or to be used) in making ‘foreign’ or ‘specified’ supplies (or both), you can recover the input tax in full.
+
+However, if the goods and services are only partly used in making these supplies, you will need to apportion the input tax.
+
+9.4 How to apportion the input tax
+From 1 April 2009 the standard method deals with input tax on all supplies unless it is dealt with separately under regulation 103A (Investment Gold). See the relevant HMRC notice for further details.
+
+Supplies described in items 1 and 6 of Group 5 of schedule 9 to the VATA 1994 (mainly supplies of financial instruments such as shares and bonds) and supplies made from overseas establishments are catered for by the standard method but are excluded from the values-based calculation, irrespective of their place of supply. Instead, input tax wholly or partly relating to these supplies is ring-fenced and recovered on the basis of the use of the purchases in making UK taxable and ‘foreign’ and ‘specified’ exempt supplies.
+
+All remaining input tax is recovered by reference to the output values-based calculation (unless a new partly exempt business opts to recover on the basis of use in accordance with paragraph 4.6).
+
+9.5 How to apportion the input tax if you’re on a special method
+You can apply for a special method that just attributes input tax to UK taxable supplies. If you do, input tax on ‘foreign’ and ‘specified’ supplies must be calculated according to the use of the purchases concerned in making ‘foreign’ and ‘specified’ supplies. The calculation must be carried out before your special method calculation.
+
+Alternatively, you can apply for a single method covering all of your calculations of input tax attributable to UK taxable supplies, ‘foreign’ supplies and ‘specified’ supplies. This ‘combined’ method will attribute all of your input tax except for input tax wholly or partly relating to incidental financial supplies and investment gold, see section 10 for more details.
+
+10. Can you recover input tax relating to share issues and share sales
+10.1 Share issues
+The issue of new shares is not a supply for VAT purposes. If the issue is made for the purpose of an economic activity, then any related VAT will be input tax, subject to the normal rules. If you’re partly exempt, then recovery should be made in accordance with the partial exemption method you are using.
+
+10.2 Share sales
+If you sell existing shares, this will normally be an exempt supply in its own right and should be treated accordingly. If you’re on a special method and the supply is incidental to your other business activity costs listed in Appendix 3.
+
+If you use the standard method you should refer to paragraph 10 for information on how to deal with share sales.
+
+11. The de minimis rule
+11.1 The meaning of ‘de minimis tests’
+Where your exempt input tax is insignificant you can treat it as if it were taxable input tax and recover it in full if its total value is less than a prescribed amount. An amount that is insignificant is known as ‘de minimis’ and is set out in law for partial exemption purposes. With effect from 1 April 2010, 2 changes to simplify the ‘de minimis’ rules were introduced:
+
+simplified tests
+annual test
+The de minimis limit remains the same but the changes make it easier and less time-consuming for you to confirm your de minimis status.
+
+If you agree a combined business or non-business and partial exemption method (see paragraph 7.2) you will not be able to benefit from the de minimis rules. This is because the de minimis rules would require some businesses to unpick their business or non-business and partial exemption calculations which goes against the objective of the combined method to cut down on the number of calculations and reduce compliance costs.
+
+There is no de minimis limit for non-business VAT.
+
+11.2 The de minimis limits
+You can be treated as fully taxable in any tax period or longer period (section 12) if the total value of your exempt input tax is not more than:
+
+£625 per month on average
+half of your total input tax in the relevant period
+The total value of exempt input tax is that which is directly attributable to exempt supplies plus the proportion of any residual input tax that is attributable to exempt supplies.
+
+‘Total input tax’ excludes blocked input tax (such as VAT on the costs of business entertainment) which is irrecoverable.
+
+‘On average’ means the average over the tax period or longer period.
+
+11.3 If your exempt input tax is below the de minimis limits
+Normally you cannot claim any of your exempt input tax, however, if your exempt input tax is below the de minimis limit, you can instead recover it. If you have a group registration for VAT, the limit applies to the group as a whole. For treatment of divisional registrations see paragraph 15.3.
+
+11.4 Items that you should include or exclude
+When applying the de minimis limit you should ignore any input tax due to you or from you as adjustments under the Capital Goods Scheme (see paragraph 13.18) or under your annual adjustment (see section 12).
+
+11.5 When to apply the de minimis limit
+Every time you prepare the figures for your VAT Return you must check if your exempt input tax exceeds the de minimis limit, unless you’re using the ‘annual test’ (see paragraph 11.11).
+
+You will need to reconsider the de minimis limit when you carry out your annual adjustment (see section 12). Your annual adjustment calculation will need to include all exempt input tax incurred in the tax year, regardless of whether it was recovered under the de minimis rule during the tax year.
+
+11.6 An example of a de minimis calculation
+This example shows how to apply the de minimis test in an annual adjustment.
+
+Example of a de minimis calculation (VAT Notice 706) (PDF, 35.9 KB, 1 page).
+
+The exempt input tax is more than £625 on average, and so is not recoverable. This is the case even though it is less than 50% of all input tax incurred, because both conditions must be met to pass the de minimis test.
+
+11.7 The simplified tests
+The simplified tests save some businesses the need to carry out a full partial exemption calculation to confirm their de minimis status. If, in a VAT period, you pass Test One or Test Two you may treat yourself as de minimis and provisionally recover input tax relating to exempt supplies. You’re still required to review your de minimis status at year-end as before and account for any under or over recovery of input tax as part of your annual adjustment (see section 12). The simplified tests are as follows.
+
+Test One
+Total input tax incurred is no more than £625 per month on average and the value of exempt supplies is no more than 50% of the value of all supplies.
+
+Test Two
+Total input tax incurred less input tax directly attributable to taxable supplies is no more than £625 per month on average and the value of exempt supplies is no more than 50% of the value of all supplies.
+
+‘Total input tax’ excludes blocked input tax (such as VAT on the costs of business entertainment) which is irrecoverable.
+
+‘The value of all supplies’ includes taxable supplies made in the UK, supplies made outside the UK which confer the right of recovery and exempt supplies.
+
+‘Input tax directly attributable to taxable supplies’ is input tax on costs that are used or to be used exclusively in making taxable supplies, for example, input tax on the cost of goods for resale.
+
+11.8 Interaction of the new and original test
+The new tests supplement the original test. A business is de minimis if it passes Test One, Test Two or the original test, and if it passes any one test there is no need for it to consider the other 2. Even if a business fails Test One and Test Two, the information gathered is still required to carry out a full partial exemption calculation for the original test.
+
+11.9 Carrying out an exemption calculation if you pass Test One or Test Two in a VAT period
+The tests have been introduced to save the need for partial exemption calculations in these circumstances.
+
+11.10 Carrying out an annual adjustment
+At the end of your partial exemption year, you need to apply the de minimis test to the year as a whole.
+
+If you pass Test One, for the year, you can recover all of your input tax relating to exempt supplies and are not required to carry out any further partial exemption calculations.
+
+When applying Test Two, you first need to review how much of the input tax you have incurred over the year is directly attributable to taxable supplies — then, if you pass Test Two for the year, you can recover all of your input tax relating to exempt supplies and are not required to carry out any further partial exemption calculations.
+
+If you fail Test One and Test Two for the year, then you need to carry out a full partial exemption calculation for the year to determine whether you pass the original de minimis test and account for any under or over recovery of input tax as part of your annual adjustment in the normal way.
+
+11.11 The annual de minimis test
+The normal rules require you to apply the de minimis test in each VAT period. If you pass the test you’re de minimis and can provisionally recover input tax relating to exempt supplies in that period. This is subject to an end-of-year partial exemption calculation to review your partial exemption status and any under or over recovery of input tax is accounted for in the annual adjustment.
+
+However, with effect from 1 April 2010, under the annual de minimis test, most businesses have the option of applying the de minimis test once a year, instead of 4 or 5 times a year (depending on when a business decides to account for its annual adjustment). It allows a business that was de minimis in its previous partial exemption year to treat itself as de minimis in its current partial exemption year. This means it can provisionally recover input tax relating to exempt supplies in each VAT period, saving the need for partial exemption calculations.
+
+You’re still required to review your de minimis status at year-end in accordance with paragraph 11.10 and if you fail the de minimis test for the year you must repay the input tax relating to exempt supplies that you provisionally recovered in-year. However, there is no need to carry out in-year partial exemption calculations.
+
+11.12 The conditions for using the annual de minimis test
+If you want to use the annual de minimis test you must:
+
+have passed the de minimis test for your previous partial exemption longer period
+consistently apply the annual test throughout any given partial exemption longer period
+have reasonable grounds for not expecting to incur more than £1 million input tax in your current partial exemption longer period
+If any of these conditions are not met then you are required to apply the de minimis test in each VAT period, which remains the default position.
+
+11.13 What else you need to consider
+The main risk of using the annual test is that you provisionally recover input tax relating to exempt supplies in-year, but then fail the test at year-end and are required to repay this input tax to us. If you think you are likely to fail the test at year-end and repaying the input tax would cause you difficulties, then it would not be advisable to take up the option of the annual test.
+
+12. Annual adjustments
+12.1 The definition of ‘annual adjustments’
+The input tax you claim in each tax period is provisional. It’s reviewed at the end of your longer period (which is normally a tax year), because each tax period can be affected by factors such as seasonal variations either in the value of supplies you make or in the amount of input tax you incur. This is called the annual adjustment.
+
+The adjustment has 2 further purposes, to:
+
+reconsider your use of goods and services over the longer period
+re-evaluate your exempt input tax under the de minimis rules
+12.2 The definition of a ‘tax year’
+The tax year is a period of 12 calendar months. It normally ends on 31 March, 30 April or 31 May depending on your tax periods (that is, the periods covered by your VAT Returns). If you make monthly returns, your tax year ends on 31 March.
+
+You may find it more convenient to have your tax year correspond with your financial year. If you wish to change your tax year, you should write to HMRC for approval. Your longer period must always finish on the last day of a tax period. Contact VAT helpline for the address to send your request.
+
+12.3 The definition of ‘longer periods’
+The tax year is the normal longer period for adjustment purposes, although in some circumstances the annual adjustment may cover a period shorter than a tax year. Your first longer period runs from the first day of the tax period in which you first incur exempt input tax to the last day of that tax year. If that tax period is the final period of the tax year, no longer period is applied to that tax year. There are also rules to deal with special circumstances where the longer period does not comprise a period of 12 months. These include:
+
+newly registered businesses (see paragraph 12.7)
+belated registration (see paragraph 12.8)
+VAT cancelled registration businesses (see paragraph 12.9)
+12.4 How to calculate annual adjustments
+At the end of your longer period, you should revisit the attribution made during the year and determine whether the purchases have been used in the same way as was anticipated when each return was made. Where use or intended use in the longer period differs from the use or intended use in the tax period in which you claimed the input tax, you must re-attribute the input tax to reflect the use in the longer period. An example to illustrate this appears at paragraph 12.5.
+
+Having reconsidered your use of purchases, you will need to recalculate the amount of residual input tax you can claim using the figures for the whole of the longer period. The method of calculation should be identical to that used in the earlier tax periods.
+
+Using this figure of residual input tax, you must then re-apply the de minimis test outlined in section 11 using figures for the whole longer period to determine whether you can be treated as fully taxable for the whole of the longer period (unless you have a combined business or non-business and partial exemption method) in which case de minimis does not apply.
+
+Finally if you’re using the standard method you will need to consider whether the standard method override applies to you (see section 5).
+
+Any difference between the amount of recoverable input tax as a result of the longer period calculation and the total amount you have provisionally claimed on your VAT Returns during the longer period is your annual adjustment.
+
+If you’re a new partly exempt business and have opted to recover input tax on the basis of use (see paragraph 4.6) you’re also required to calculate your annual adjustment on the basis of use to make sure consistency. Also, if you did not provisionally recover input tax on the basis of use, but were nevertheless entitled to do so, you may still calculate your annual adjustment on the basis of use. This is to give new partly exempt businesses maximum flexibility and save the need for them to seek approval of a special method.
+
+12.5 Example of re-attribution
+A finance company buys a computer system to lease to another company. It claims the input tax in full because it only intends to make a taxable supply of the computer. However, after the company submits its quarterly VAT Return, but before the end of the tax year, the lease is terminated and the computer is used in its own partly exempt business for the remainder of the year. This means, in the longer period, the computer was used to make both taxable and exempt supplies and should be re-attributed from directly attributable taxable input tax, to residual input tax.
+
+12.6 How to declare annual adjustments
+Prior to 1 April 2009 you had to account for your annual adjustment in the first VAT Return following the end of your longer period (unless we had approved the use of another period).
+
+However, for longer periods ending on or after 30 April 2009, you have the option to bring forward your annual adjustment to the last VAT Return of your longer period without notifying us.
+
+If the recalculation shows that your exempt input tax is within the de minimis limit set out in section 11, you’re treated as fully taxable for the longer period. Any input tax you did not claim on a VAT Return during this period because you were above the de minimis limit for that individual tax period, is an underclaim of VAT.
+
+Partial exemption annual adjustments that are correctly carried out and entered in your VAT account for the correct period are not errors and do not have to be notified to us using the error correction procedures. However, you should remember that you cannot use the annual adjustment to correct actual errors, such as input tax incorrectly treated as exempt when in fact the goods or services were used to make taxable supplies from the outset. Errors such as these should be corrected in accordance with the guidance in how to correct VAT errors and make adjustments or claims VAT Notice 700/45.
+
+12.7 If you’re a newly-registered business
+If you’re newly-registered and immediately incur exempt input tax, your initial longer period for adjustment purposes runs from your effective date of registration to the day before the start of your first tax year. This is called your registration period for partial exemption purposes. If you do not incur exempt input tax until later in your registration period, your longer period will run from the first date you incur exempt input tax to the day before the start of your first tax year.
+
+12.8 Belated registration
+If you’re registered retrospectively, your first VAT Return may cover a period that is 6 months or longer. If so, you will need to break this period down into what would have been your normal VAT periods. Then, where necessary, you will need to carry out a separate longer period adjustment in respect of your registration period and each subsequent tax year. You calculate the total amount of input tax you are entitled to recover and put this figure on your VAT Return.
+
+12.9 If you have cancelled your VAT registration
+If your registration is cancelled, your last period for adjustment purposes (your ‘cancelled VAT registration period’) runs from the day after the end of your previous tax year to the effective date of VAT registration cancellation. You enter your annual adjustment in your VAT account for the final period ending on the effective date of VAT cancellation.
+
+13. Intended use of supplies received and changes of intention
+13.1 This section
+Section 3 explains that attribution of input tax should be carried out at the time you receive purchases on the basis of the use you make, or intend to make, of them.
+
+It’s important that you establish the use or intended use at this time so that the input tax incurred can be accurately attributed to the onward supplies to which it relates.
+
+However, there may be occasions when intentions are not clear or where you change your intention before you use, or when you actually use, these purchases. There may also be occasions where your use changes over a period of time.
+
+This section covers how to establish what your intention is, gives advice on procedures to follow and explains when an input tax adjustment by ‘clawback’ or ‘payback’ is required.
+
+Paragraph 13.16 describes how the ‘clawback’ and ‘payback’ rules have been extended with effect from 1 January 2011 to include changes in actual or intended non-business or private use. For this purpose non-business is considered as exempt business use.
+
+13.2 How to establish what your intentions are when you receive supplies
+At the time that you receive a supply for the purposes of your business, you need to look at the full use you will put that supply to within your business. Even if the initial use will be solely in one way, if you know that you will eventually use the supply in another way you will need to take that into account from the outset.
+
+A supply you receive will be used in making an onward supply by your business if it is wholly or partly a cost component of your making that onward supply. You need to look at the VAT liabilities of all the supplies you will make using the supply received in order to establish how to attribute the input tax on that supply as either taxable, exempt or residual.
+
+13.3 How VAT incurred on costs relating to supplies of land or property will be affected
+The land and property sector is an area where it can be particularly difficult to establish what your intentions are when you receive supplies.
+
+Supplies of land and property can either be taxable or exempt and VAT on costs incurred should be attributed according to the liability of the supplies or intended supplies that are to be made.
+
+However, a supply that would otherwise be exempt may become taxable if an option to tax is made and notified to HMRC. Even where a supply requires a valid option to be in place before it can be taxable, it is possible for you to have a taxable intention before the option is made and notified. This is far more likely in the early stages of any project than when construction has commenced and cannot be the case after you have started to make supplies. HMRC will expect to see a range of evidence consistently indicating that such an intention exists before accepting that this is so.
+
+Opting to tax land and buildings (VAT Notice 742A) gives more information on the option to tax generally and on what evidence might lead to the conclusion that a taxable intention exists prior to an option being made.
+
+However, the best evidence of your intention to make taxable supplies where a supply would normally be exempt remains an effective option to tax.
+
+13.4 How to deal with speculative supplies of property
+As a person developing property you may incur costs on, or related to, one or more sites without knowing exactly what supplies you will eventually make, if any. In these cases VAT should be attributed as residual input tax provided that the costs incurred are for business purposes. This is because, as you do not know what supplies may be made, you cannot know what VAT liabilities they may have.
+
+If a project is aborted then a clawback (see paragraph 13.7) or payback (see paragraph 13.9) adjustment may be appropriate unless costs are wasted (see paragraph 13.14).
+
+13.5 What happens if you have surplus property and let it out
+There may be instances where you incur VAT on costs relating to a building that you no longer require for your core business. Whilst you have not decided what you will do with the building, this VAT will be residual input tax.
+
+If you have decided to sub-let and have started to take steps to put the property on the market, this is strong evidence that you have an exempt intention unless you have made and notified an option to tax. Input tax you’re charged on rent will be attributable to exempt supplies unless it is clear that only taxable supplies can be made. If an option is made and notified at a later date, before any supplies have yet been made, any input tax that has been attributed to exempt supplies cannot be adjusted using ‘payback’ (see paragraph 13.9). This is because the costs will not be available to become cost components of subsequent taxable supplies, as they have effectively been ‘used-up’.
+
+13.6 When you’re able to adjust your input tax
+There may be occasions where, following the end of the longer period, you change the intended use of purchases on which you based your claim to input tax. Where you change your intention before you use the purchases, or, where you actually use the purchases for a different purpose, the ‘clawback’ provisions (see paragraph 13.7) or ‘payback’ provisions (see paragraph 13.9) may apply. Clawback or payback cannot apply after first use of the input tax.
+
+More information on ‘first use’ can be found in VAT partial exemption guidance, PE61400 — other partial exemption issues: changes in intention or use: intention and first use.
+
+If the change of intention or use occurs within the same longer period as the input tax was incurred than an adjustment will be due under the annual adjustment (see section 12).
+
+13.7 When ‘clawback’ applies
+This applies where:
+
+(a) you have claimed input tax on purchases because:
+
+you intended to use them in making taxable supplies but in the event you use them, or form an intention to use them, in making either exempt supplies or both taxable and exempt supplies or
+(b) you have claimed input tax on purchases because:
+
+you intended to use them in making both taxable and exempt supplies but in the event you use them, or form an intention to use them, in making only exempt supplies
+And for both (a) and (b) above the change of intention or actual use occurs within 6 years of the beginning of the VAT period in which the original intention was formed.
+
+13.8 If ‘clawback’ applies
+If ‘clawback’ applies, you will be required to recalculate the input tax you have claimed in past tax periods and to repay to us an amount equal to any over claimed input tax. You must do this on the return for the tax period in which the use occurs or the revised intention is formed, whichever happens first. Your recalculation must be carried out using the method you used when making your original claim to input tax.
+
+If a partial exemption method was in place when the input tax was incurred then you must use that method to make your clawback calculation. If you were not required to use a partial exemption method when the input tax was originally incurred then you would normally use the standard method for your adjustment unless you get our approval to apply a special method instead. However, in these circumstances you can base your adjustment on an alternative calculation (without first adopting a partial exemption method and without prior approval from HMRC) so long as the calculation is fair.
+
+The alternative calculation cannot be used if a partial exemption method was already in place. However, if an existing partial exemption method becomes unfair because of the change in intention, then we may exceptionally allow a different partial exemption method to be approved and backdated.
+
+You may also need to reconsider whether your exempt input tax in the past periods concerned remains below the de minimis limit (see section 11).
+
+13.9 When ‘payback’ applies
+This applies where:
+
+(a) you have not claimed input tax on purchases because:
+
+you intended to use them in making exempt supplies but in the event you use them, or form an intention to use them, in making taxable supplies or both taxable and exempt supplies, or
+(b) you have not claimed input tax on purchases because:
+
+you intended to use them in making both taxable and exempt supplies but in the event you use them, or form an intention to use them, in making only taxable supplies
+And for both (a) and (b) above the change of intention or actual use occurs within 6 years of the beginning of the VAT period in which the original intention was formed.
+
+13.10 If ‘payback’ applies
+If ‘payback’ applies you should write to HMRC, applying for a sum equal to any under claimed input tax to be repaid to you. Contact VAT helpline for the address to send your application to. When we have confirmed the amount to be repaid, you can enter this in your VAT account as an under-claim and include it in your next VAT Return. When you calculate the amount under claimed, you must use the method you used at the time the input tax was incurred.
+
+See paragraph 13.8 for information on what to do if no method was in place or the existing method becomes unfair because of the change in intention.
+
+When calculating payback, you may also need to reconsider whether your exempt input tax in the past periods concerned is below the de minimis limit (see section 11).
+
+13.11 If you’re only making an interim use
+If you’re making an adjustment under either ‘clawback’ or ‘payback’ because you make an interim use of the goods or services which is different from that which you originally intended, and you retain an intention to make that ‘original’ supply, all such supplies should be taken into account.
+
+13.12 Example of an interim use leading to ‘clawback’
+You may find the following helpful in understanding the principle.
+
+A construction company which was previously fully taxable builds a residential property with the intention of selling the freehold (a zero-rated supply). In the course of the work, it incurs input tax of £15,000. The input tax is directly attributable to an intended taxable supply, so the company claims all the input tax. The property is put on the market, but no buyer is found.
+
+After the end of its longer period the company decides to let the property on an interim short-term lease whilst continuing to search for a buyer. Because the company originally intended to make a taxable supply, but in fact, actually makes an exempt supply of a lease, an amount needs to be repaid under the ‘clawback’ provisions. In this case, the company still retains an intention to make a taxable sale of the property. The input tax would therefore be apportioned across the 2 supplies and an amount to reflect the exempt use would be repaid.
+
+If, on the other hand, the company decides to take the property off the market and grant a 15-year lease, the only supply would be exempt and an amount equal to all the input tax would be repaid.
+
+More information about house builders who make short-term exempt supplies can be found in VCONST02900 - Zero-rating the construction of buildings the National Archives website.
+
+13.13 A change in liability affecting ‘clawback’ or ‘payback’
+The ‘clawback’ and ‘payback’ provisions do not apply where the liability of your intended supply has altered because of a change in the law.
+
+13.14 Abortive supplies
+There may be occasions when an intended supply does not take place because a project is aborted. In such circumstances, when the purchases are not used to make any supply, no adjustment to the initial claim of input tax is required or allowed.
+
+However, where a project is aborted and the purchases are used to make a different supply from that originally intended, an input tax adjustment will still usually be appropriate, using the ‘clawback’ and ‘payback’ provisions mentioned in paragraph 13.7 and 13.9.
+
+13.15 Changes of use after ‘first use’
+There may be occasions where you have correctly claimed input tax because you have actually used an item either wholly or partly in making taxable supplies and, at a later date, the extent to which you use that item in making taxable supplies changes.
+
+If the change occurs before the end of the longer period, the annual adjustment will reflect this (see section 12). If the change occurs after the annual adjustment, no further adjustment will normally be required. The exception to this is if the item is a ‘capital item’ under the terms of the Capital Goods Scheme. See paragraph 13.18.
+
+13.16 Including non-business use within clawback or payback
+Before 1 January 2011, only VAT on business-related expenditure (input tax) potentially qualified for adjustment under the clawback or payback rules. With effect from 1 January 2011, the clawback or payback rules have been extended to allow for adjustments to non-business (including private) use, unless the option to hold an asset, or part of an asset, wholly outside the business is adopted see Capital Goods Scheme VAT Notice 706/2 paragraph 5.1.
+
+VAT which is initially allocated entirely for non-business purposes is not eligible for adjustment.
+
+13.17 Example of clawback or payback for non-business use
+You may find the following helpful in understanding the principle.
+
+A charity incurs expenditure of £10,000 and related VAT of £2,000 on goods that it intends using 50% for non-business purposes and 50% for exempt supplies. Its initial entitlement to VAT recovery is therefore nil. 18 months later, before the expenditure has been used for any activities (business or non-business), it changes its intention and decides to put the expenditure entirely to taxable use. It’s therefore entitled to a payback of £2,000 which it can claim in the normal way.
+
+Under the old rules (applicable to VAT incurred before 1 January 2011), the VAT initially allocated to non-business activities would not have been subject to adjustment and so the business would only have been entitled to a payback adjustment of £1,000.
+
+13.18 The Capital Goods Scheme
+The law recognises that certain items of capital expenditure are capable of being used by a taxable person over a period of years and that there can be variations over those years in the extent to which such goods are used in making taxable supplies.
+
+The Capital Goods Scheme provides a mechanism for adjustments to be made to the initial amount of input tax recovered to reflect these variations over a period of up to 10 years. In broad terms the Capital Goods Scheme applies to:
+
+computers and items of computer equipment of a tax-exclusive value of £50,000 or more
+land and buildings, civil engineering works and refurbishments of a tax-exclusive value of £250,000 or more
+where you acquire these as capital items for use in your business. Only the values of taxable supplies other than zero-rated supplies are taken into account when determining whether a Capital Goods Scheme item is created.
+
+For more details of the scheme see Capital Goods Scheme (VAT Notice 706/2).
+
+For VAT incurred on or after 1 January 2011, there have been changes to the Capital Goods Scheme rules:
+
+the Capital Goods Scheme has been extended to include aircraft, ships, boats and other vessels with a tax-exclusive value of £50,000 or more
+Capital Goods Scheme adjustments are required to reflect changes in levels of non-business use (including private use) of the asset over the adjustment period
+There have also been a number of technical changes to the operation of the Capital Goods Scheme.
+
+For full information on the changes to the Capital Goods Scheme, see Capital Goods Scheme (VAT Notice 706/2.
+
+14. Belated claims to input tax and capping
+14.1 Belated claims to input tax
+If you have failed to claim input tax in any tax period then you can claim it in a later period as long as that does not lead to a claim being made more than 4 years from the due date of the return for the prescribed accounting period in which the input tax was charged to you.
+
+Alternatively you can correct the error by the normal procedures set out in how to correct VAT errors and make adjustments or claims VAT Notice 700/45. In either case, however, you can only claim the input tax to the extent that you would have been able to had you included it in the period in which it was charged to you. Notice 700/45 contains information on the transitional arrangements for the increase in time limits from 3 to 4 years from 1 April 2009.
+
+14.2 The capping provisions
+In most circumstances we cannot assess for errors found more than 4 years after the end of the accounting period in which the error was made. Similarly you can only rectify errors involving under claimed input tax within 4 years of the end of the period in which the input tax should have been claimed. This is known as capping.
+
+If the capping rules apply to you, you should carry out your partial exemption calculations in the normal way, as if you were going to recover or repay the input tax. You should identify where the capping time limit falls and any VAT relating to a tax period more than 4 years old will not be adjusted. VAT relating to tax periods less than 4 years old should be recovered or repaid, as appropriate.
+
+14.3 What if my tax year or longer period spans the 4 years
+If the VAT period in which the longer period or annual adjustment is due is not capped, but the earlier periods making up the longer period are themselves capped, then you can use the annual adjustment to take account of a change of use during the longer period. This is because the annual adjustment is properly used to reconsider any direct attribution made during the year and makes adjustments to reflect the use of goods or services in the longer period (see paragraph 12.4).
+
+14.4 If you have made an error in a period that is capped
+If you have made an error in a period that is capped, you cannot use the annual adjustment to correct that error (see paragraph 12.6). When you recalculate the annual adjustment, it is the corrected figures for the earlier periods that should be used (although you cannot recover or repay the tax relating to the earlier periods).
+
+15. Special circumstances which have a bearing on the partial exemption rules
+15.1 Special circumstances that apply to group registration
+There are 3 important points to remember regarding partial exemption and VAT groups.
+
+Points to remember	Therefore
+1. A VAT group is treated as a single person trading through its representative member.	it will have only one partial exemption method for the whole group. However, in deciding whether your VAT group can treat property or financial transactions as incidental for the purposes of the standard method calculation the different business activities of the group should be considered separately. Section 4 of this notice explains this in more detail. Remember that it is necessary to look at each of the business activities carried on by a group member, not just its principal enterprise.
+2. Supplies between group members are disregarded for VAT purposes.	the VAT group should attribute input tax by ‘looking through’ the transactions between group members to the supplies made to persons outside the group. The example at paragraph 15.2 shows how this will work.
+3. If you set up a new VAT group and wish to use a special method you must not simply use a method that was in place with former group members.	you must agree a new method for the group.
+Group and divisional registration VAT Notice 700/2 gives further details on VAT groups.
+
+15.2 Example of supplies between group members
+A company rents a building from another company in the same VAT group. This could be either a taxable or an exempt supply if the companies were not in the same VAT group. However, because they are, we need to ‘look through’ to the supplies made by the company renting the building to determine how to deal with the input tax on the upkeep of that building. If it makes only taxable supplies, the input tax should be claimed in full. If it makes only exempt supplies, it should not be claimed. If it makes both taxable and exempt supplies, the input tax should be treated as residual and recovered according to the partial exemption method.
+
+15.3 Divisional registration being affected
+Notice 700/2: group and divisional registration explains that a body that is organised in a number of divisions may apply for each division to be separately registered for VAT.
+
+However, divisional registration will not be allowed if the exempt input tax of the body as a whole exceeds the de minimis limit (see section 11). If, at any time, a corporate body registered in divisions exceeds the de minimis limit, it must advise HMRC immediately, telling us how it is going to deal with the restriction of input tax so that a decision can be made as to whether the divisional registration should be allowed to continue or whether a single registration is needed.
+
+15.4 Holding companies
+Holding companies may incur input tax on costs for business purposes that do not relate directly to taxable or exempt supplies (for example, VAT on the costs of acquiring a company to which it intends to make taxable management services). These costs that relate to the economic activity as a whole need to be apportioned under the terms of the partial exemption method in place. A holding company may also incur input tax that relates directly to supplies (for example the sale of shares in subsidiaries or disposals of property). In these circumstances recovery of input tax will depend on the liability of the supplies made and whether they were made by way of business.
+
+15.5 If you’re involved with the transfer of a going concern
+The transfer of assets of a going concern is neither a supply of goods nor a supply of services for VAT purposes (see Transfer a business as a going concern (VAT Notice 700/9)).
+
+The way you treat input tax incurred in relation to a transfer of a going concern depends on whether you are the transferor (the person disposing of the business), or the transferee (the person acquiring the business).
+
+15.6 If you’re the transferor
+Input tax on expenses that relate wholly to the transfer (for example legal fees) should be treated as an overhead of that part of the business being transferred. Where that part of the business makes:
+
+only taxable supplies, the input tax is fully recoverable
+only exempt supplies, the input tax is wholly non-recoverable
+both taxable and exempt supplies, the input tax is residual and recoverable in accordance with the partial exemption method in place
+If your partial exemption method fails to achieve a fair and reasonable result in these circumstances, we may, exceptionally, be prepared to approve an alternative method, which has retrospective effect.
+
+15.7 If you’re the transferee
+The input tax on costs that relate wholly to the acquisition of assets acquired for your business, as a result of a transfer of a going concern, will be recoverable to the extent to which they will be used in making taxable supplies. Therefore, where they’re used in making:
+
+only taxable supplies, the input tax is fully recoverable
+only exempt supplies, the input tax is wholly non-recoverable
+both taxable and exempt supplies, the input tax is residual and recoverable in accordance with the partial exemption method in place
+This applies only to acquisitions of businesses by way of a transfer of a going concern.
+
+Your VAT group may have to account for VAT on certain assets as a supply both to and by the group if you:
+
+acquire a business or its assets as a going concern
+are a member of a VAT group registration that is partly exempt, or become partly exempt during the tax year in which the transfer takes place
+Read the Transfer a business as a going concern (VAT Notice 700/9) for full details.
+
+15.8 If you receive services from outside the UK
+As a partly exempt business you may receive services from outside the UK on which you have to account for VAT. You must deal with those services as if you had supplied them yourself in the UK. The services subject to this ‘reverse charge’ and the procedures to follow are described in Place of supply of services (VAT Notice 741A).
+
+The points to remember for partial exemption purposes are:
+
+an amount equal to the output tax you pay on an imported service is your input tax
+this input tax is then treated like any other input tax for attribution, allocation and apportionment purposes
+you can only claim the input tax in full if the imported service is used, or to be used, to make a supply with the right to deduct input tax
+you must exclude the value of imported services from your calculation to apportion residual input tax if you use the standard method or a special method based on output values
+but you should include exempt input tax on imported services with your other exempt input tax in determining whether you are within the de minimis limits or not
+You cannot claim input tax simply by relating it to the chargeable imported service itself.
+
+15.9 Agreements with trade bodies
+We have entered into agreements with a number of trade bodies about how their members may calculate their claimable input tax. Details of these agreements can be found in Administrative agreements with trade bodies (VAT Notice 700/57).
+
+16. Glossary
+The following is a list of some terms commonly used in partial exemption, along with a brief explanation of their meaning. It is not a full list. Some terms are complex, and so these explanations should be regarded as general only, and not definitive. If in doubt, contact VAT helpline.
+
+Term	Explanation
+Allocation	Some special methods have different sectors where the recoverable element of residual input tax is different. Allocation is the means by which residual input tax is distributed to specific sectors within a method (see section 6).
+Annual adjustment	At the end of the tax year the partial exemption calculation is recalculated using annual figures. See section 12.
+Apportionment	Residual input tax must be apportioned to reflect the extent to which the purchases on which it is incurred are used in making onward taxable supplies. The partial exemption method carries out this function.
+De minimis tests	Tests designed to allow recovery of minimal amounts of exempt input tax — more information is given in section 11.
+Direct attribution	The identification of input tax on supplies that are wholly used, or to be wholly used in making taxable supplies or are wholly used or to be wholly used in making exempt supplies.
+Exempt input tax	Input tax incurred on purchases which are used or to be used in making exempt supplies. It comprises input tax directly attributable to exempt supplies and, after the partial exemption method has been applied, the exempt element of residual input tax identified by the partial exemption method.
+Exempt supplies	Supplies made by a business, which are listed in Schedule 9 of the VAT Act 1994. VAT incurred in making exempt supplies is non-recoverable, unless they are ‘specified’ supplies, subject to the de minimis test.
+Input tax	VAT incurred by a VAT-registered person on goods and services purchased for the purposes of a business.
+Longer period	This is usually the tax year for annual adjustment purposes but may in certain circumstances be shorter than a tax year. It may also be longer in the case of a mid-year stagger change. See section 12.
+Foreign supplies	Supplies made by a business which are made outside the UK but which would be taxable if they were made in the UK. See section 9.
+Residual input tax	Input tax which is used, or to be used, to make both taxable and exempt supplies. It is apportioned between taxable and exempt supplies by the partial exemption method. Residual input tax is commonly referred to as ‘non-attributable input tax’ or ‘the pot’.
+Special method	Any partial exemption method, other than the standard method, used to identify the taxable element of input tax incurred. Special methods require prior approval from HMRC. See section 6.
+Specified supplies	Supplies specified by Treasury Order which are not taxable supplies, but which carry the right to recover input tax incurred in making them. See section 9.
+Standard method	This is the default partial exemption method. It is specified in law and is suitable for most smaller businesses (see section 4).
+Taxable input tax	Input tax incurred on purchases of goods and services which are used or to be used in making taxable supplies and other supplies which carry the ‘right to deduct’ (see paragraph 2.3).
+Taxable supplies	Supplies made by a business, which are either standard, reduced or zero-rated. Input tax incurred in making taxable supplies is deductible.
+Tax year	Every VAT-registered business has a tax year. This usually ends at the end of March, April or May each year, depending on the business’s VAT Return periods. See paragraph 12.2.
+VAT groups	2 or more corporate bodies accounting for VAT under a single VAT registration number. One acts as representative member and any supplies between the members of the group are disregarded for VAT purposes. See group and divisional registration (VAT Notice 700/2.
+Appendix 1 — declaration template
+Name of business:
+
+Address:
+
+VAT registration number:
+
+This Declaration is in accordance with paragraphs (9) and (10) of regulation 102 of the VAT regulations 1995.
+
+As
+
+the taxable person (where the signatory is a sole proprietor)
+
+or
+
+the person authorised by the taxable person to sign this declaration on its behalf
+
+I hereby declare that to the best of my knowledge and belief, the proposed special method (state precisely where the method is set out) fairly and reasonably represents the extent to which goods or services are used or to be used in making taxable supplies.
+
+I also confirm that I have taken reasonable steps to make sure that I am in possession of all relevant information before making this declaration.
+
+Name (print):
+
+Signed:
+
+Position:
+
+Date:
+
+Appendix 2 — Guidance for businesses seeking approval for a partial exemption special method
+To apply for partial exemption special method (PESM) use the online service.
+
+If you are unable to use the online service, contact VAT Written Enquiries team by post.
+
+Information you should provide when seeking approval of a partial exemption special method
+The following information can help us approve a special method application more quickly. It is based on the most common queries that we raise with businesses when we are considering applications for special methods.
+
+If you have already provided this information to us recently and your business has not changed there is no need to send it to us again.
+
+Basic details:
+
+a brief explanation of why your current method is no longer suitable or the proposed new method is better
+details of all the business supplies which you make or intend to make including any ‘foreign’ supplies and ‘specified’ supplies (see section 9) and their approximate value
+the VAT liabilities of your main supplies and their place of supply
+details of the main costs you incur which bear VAT and the activities to which those costs relate
+a worked example of your proposed method using actual figures — this is very important as without a worked example we cannot judge if the proposed method is low risk, you should only use projected figures where it is not possible to use actual figures, for example, if you’re starting a new business activity, and where possible should use projections prepared for other business purposes, for example, justifying the expenditure to shareholders or to get funding for the activity from a bank
+an explanation of how the method would deal with changes in your activities that might arise in the future
+a copy of your most recent annual accounts
+your declaration (see paragraph 6.2)
+Additional details
+The following information will also help if it applies to your business:
+
+details of your non-business activities and any other sources of income with approximate values (especially important if you’re applying for a combined business or non-business and partial exemption method)
+details of any income which you consider to be incidental or which would distort your partial exemption calculations
+details of any land, computers or other assets you own or intend to acquire which are covered by the Capital Goods Scheme
+details of any assets you have which are subject to existing ‘Lennartz’ accounting arrangements
+More information that will help us to process your application speedily:
+
+who is the point of contact for your application
+if the business is using an agent to oversee negotiations, enclose form 64-8, if not already submitted
+when do you want the method to start, for example, the start of the current tax year or the next VAT accounting period
+when do you want your tax year to end (see section 12)
+does your business use non-standard tax periods, for example, VAT periods aligned to your own accounting periods rather than to calendar months
+any plans or proposals to change your business activities within the foreseeable future
+define clearly any words in your proposal which are not standard or legal terms, or which are specific to your business
+any other information you feel is relevant to your business or proposed method which will help HMRC approve the method
+How to apply
+The use of a special method is appropriate when the standard method does not give a ‘fair and reasonable’ recovery of input tax and where the alternative guarantees a more accurate result. By ‘more accurate’ we mean the special method more precisely reflects the use of costs. Before sending your request, read PE41000 of the partial exemption manual and page PE42000.
+
+If you are newly VAT-registered or newly partly exempt, refer to our simplification measures and the use based option for newly partly exempt businesses, read section4 before proceeding with this application as it may be a better option initially for your business.
+
+When applying for a special method, it is essential that you commit to provide HMRC with accurate and complete information. Without this, there may be delays in dealing with applications which may necessitate your payment of VAT according to current default methodology.
+
+To apply for partial exemption special method (PESM) use the online service.
+
+If you are unable to use the online service, contact VAT Written Enquiries team by post.
+
+You must include the following information
+Part 1 — why you need a PESM
+1.The name of your business.
+
+2.Your VAT registration number.
+
+3.You are applying for a PESM because you consider that the standard method fails for your business. Tell us why you think the standard method fails for your business, including reasons why you think a PESM is needed to give you a fair and reasonable recovery of input tax. More information on why the standard method might fail can be found in PE41500 of the partial exemption manual. If your application is to change an existing PESM, give a brief explanation of why your current PESM is no longer suitable and why the new method is better.
+
+4.Did you consider any other methods apart from the one you are proposing? If so, list these alternatives and why you rejected them.
+
+5.What is the difference in recovery percentage between the standard method (or your current method) and your proposed method. Use the 2 most recent tax years for your comparison? (give a figure and state the tax years used).
+
+6.Is your business intending to undertake any capital expenditure in the next 12 months? If so, what is the expected input tax associated with the item and how will it be treated in the proposed method?
+
+7.Do you have any known plans or proposals to acquire or dispose of companies or to change business activities within the foreseeable future? If so, give details of these.
+
+Part 2 — business details
+8.Is your VAT registration a single entity such as a sole proprietorship, partnership or limited company (see 9), or a VAT group see part 2b.
+
+9.Tell us the main business activities which the entity undertakes or intends to undertake and their annual turnover.
+
+10.Tell us the VAT liabilities and values of the main supplies in the UK.
+
+11.Tell us the VAT liabilities and values of the main supplies outside the scope of UK VAT.
+
+12.Tell us the main costs which incur VAT.
+
+13.What is the total residual input tax figure in the most recent tax year?
+
+If your VAT registration is not a VAT Grouping read Part 3.
+
+Part 2B — a VAT group registration
+Partial exemption special methods for VAT group registrations can be more complex. More detailed information will be needed about how the group operates. You can submit accompanying documents to any of these questions simply by heading the document with your VAT registration number, ‘PESM application’ and the question number for our reference.
+
+14.Give us details of the structure of the VAT group and include a group structure chart if appropriate.
+
+15.Tell us the main business activities which the VAT group undertakes or intends to undertake and their annual turnover values.
+
+16.Tell us the VAT liabilities and values of the main supplies in the UK.
+
+17.Tell us the VAT liabilities and values of the main supplies outside the scope of UK VAT.
+
+18.Tell us the main costs which incur VAT.
+
+19.What is the total residual input tax figure in the most recent tax year?
+
+20.Are there any dormant VAT group members?
+
+21.Are there any intended additions or removals from the VAT group in the next 12 months? If so, give details of these.
+
+Part 3 — the PESM document
+This section is about the PESM document itself and sectorisation (if applicable to your proposal). PE42500 in the partial exemption manual details the factors HMRC will consider before approving or rejecting a PESM proposal. You should also consider if the proposed PESM properly reflects the use of any capital items in your business and the impact of the Capital Goods Scheme.
+
+22.What is your partial exemption tax year? You can find more information on tax years and partial exemption in section12.
+
+23.What date do you want your PESM to start? Details on retrospective and backdated applications and the conditions where they may be agreed can be found in the partial exemption manual page PE46500 and page PE47000.
+
+24.If your business currently uses an approved PESM what is the effective start date?
+
+25.If you have non-standard tax periods, define your tax year by providing the details in your email.
+
+26.More information on non business activities can be found in page vbnb20000 of the VAT Business/Non-Business Manual. From 1 January 2011, HMRC can approve a partial exemption method covering Business non-Business (BNB) calculations. A single agreement covering the business’s BNB and partial exemption calculations is known as the combined method.
+
+More information on the combined method can be found in section 7.
+
+Is your proposal a combined business or non-business and partial exemption calculation?
+
+27.Do you have any overseas establishments? If so, where are your overseas establishments, what activities are carried out at these establishments and what UK VAT bearing costs are used?
+
+28.Does the business make any foreign supplies or specified supplies (foreign supplies are sometimes referred to as ‘out of country’ supplies)? If so, what are they?
+
+More information can be found in page 34000 of the partial exemption manual.
+
+29.Will input tax recovery on foreign supplies be dealt with outside the PESM or is the business seeking a ‘combined method’ to deal with this input tax?
+
+More information can be found in page 34500 of the partial exemption manual. The Commissioners do not normally approve agreements on use under regulation 103 unless a combined method is being approved under regulation 102.
+
+Reverse charge question? Do you receive services from overseas? If yes, is output tax accounted for and how is input tax related to these reverse charge services dealt with within your proposed method?
+
+30.If you are proposing a PESM under one of the partial exemption frameworks, tell us which framework you are using and the methodology that applies.
+
+31.Does your proposed PESM allocate residual input tax to sectors? If so, read Part 4, question 33. If your PESM proposal does not have sectors, explain how you intend to apportion your residual input tax. This question is about the wording of your PESM. You will be asked for example calculations in Part 5.
+
+Exclusions question? Exclusions — our guidance on page pe36400 of the partial exemption manual gives usual exclusions from outputs based and inputs based calculations. Use the link and comment on whether your proposed PESM has any additional exclusions.
+
+32.Does your PESM have a ‘use based’ catchall sector for activities not captured elsewhere within the PESM? Now see Part 5.
+
+Part 4 — Sectorised methods
+A sectorised method is one that allocates residual input tax to different business activities and apportions each allocation separately. Information on sectorised methods can be found in page pe22000 of the partial exemption manual, and on allocation in page pe22500, and on apportionment in page pe23000.
+
+If your proposal does not include sectors, go to Part 5 — The Declaration.
+
+33.Partial exemption sectors might arise naturally from the way your business organises itself. For example, if your business has discrete areas, activities, or accounting centres which use input tax in different ways. This is most likely where a business is large and complex, or where a VAT group consists of a range of different business activities. Tell us about the sectors you are proposing for your method and the types of costs that are included in the sector.
+
+34.Can all the residual input tax in your proposed PESM be directly allocated to specific sectors? If no, go to 36.
+
+35.If all the residual input tax cannot be directly allocated to specific sectors, describe how the method allocates costs used by two or more sectors to those sectors? For more information about allocation methods see page 36200 of the partial exemption manual.
+
+36.Apportionment is the process of dividing residual input tax between taxable and exempt supplies. For more information about apportionment methods see page 36300 of the partial exemption manual.
+
+If residual input tax is to be apportioned between taxable and exempt supplies, describe the methods for each sector or sub-sector.
+
+Exclusions question? Exclusions guidance on page 36400 of the partial exemption manual gives usual exclusions from outputs based and inputs based calculations. Use the link and comment on whether your proposed PESM has any additional exclusions.
+
+37.For each sector will there be anything specifically included or excluded in the calculation? If so, give details on the inclusion or exclusion.
+
+38.Does your PESM have a ‘use based’ catchall sector for activities not captured elsewhere within the PESM?
+
+Part 5 — The Declaration
+Your PESM proposal must be accompanied by a ‘declaration’ that the proposed method is fair and reasonable. You should refer to page 43000 of the partial exemption manual before submitting your application for more details. Delay in submitting a declaration with your PESM proposal may delay the start year of the PESM. If you are submitting a proposal to change an existing PESM you will still need a declaration.
+
+Part 6 — other required information
+This section deals with information that must be submitted with your application and information you should consider attaching depending on your chosen method. Make sure to submit your declaration as well as the other required information.
+
+39.Full details of your proposed method — submit any other details that have not been covered in Parts 1 to 5. This includes any definitions of terms in the PESM that do not have their normal meaning, for example the definition of a transaction and how the number of transactions will be ascertained, floor-space plans clearly marked with taxable or exempt areas or how the business will determine values for supplies made, supplies received and self-supplies (where applicable).
+
+40.It is important that HMRC know the business is able to operate the proposed method. Give a worked example of the proposed calculation for the last tax year. This should fully demonstrate that the method can be readily checked, can be routinely worked by the business and gives a result that reflects the use of the input tax bearing costs.
+
+41.Your previous year’s partial exemption calculation (where applicable).
+
+42.A copy of the most recent annual accounts where available.
+
+43.If your business uses a cost-accounting mechanism and will use this mechanism as a basis for its PESM, provide copies of relevant parts of management accounts describing how your method allocates costs.
+
+Appendix 3 — Services and related goods used partly to make incidental financial supplies
+If you sell existing shares, this will normally be an exempt supply in its own right and should be treated accordingly. If you are on a special method and the supply is incidental to your other business activity, the following costs will need to be apportioned on the basis of use if they’re residual:
+
+accountants
+advertising agencies
+bodies which provide listing and registration services
+financial advisers
+lawyers
+marketing consultants
+persons who prepare and design documentation
+any person or body which provides similar services to those listed above
+See paragraph 10.2 for more details.
+
+Your rights and obligations
+Read the HMRC Charter to find out what you can expect from us and what we expect from you.
+
+Help us improve this notice
+If you have any feedback about this notice email: customerexperience.indirecttaxes@hmrc.gov.uk.
+
+You’ll need to include the full title of this notice. Do not include any personal or financial information like your VAT number.
+
+If you need general help with this notice or have another VAT question you should contact VAT helpline or make a VAT enquiry online.
+
+Putting things right
+If you are unhappy with HMRC’s service, contact the person or office you’ve been dealing with and they’ll try to put things right.
+
+If you are still unhappy, find out how to complain to HMRC.
+
+How HMRC uses your information
+Find out how HMRC uses the information we hold about you.
+
+Published 16 June 2011
+Last updated 14 September 2023 + show all updates
+Get emails about this page
+Print this page
+Contents
+Related content
+Land and property (VAT Notice 742)
+VAT notices in numerical order
+Relief from VAT on bad debts (VAT Notice 700/18)
+VAT notices in alphabetical order
+Education and vocational training (VAT Notice 701/30)
+Collection
+VAT notices in alphabetical order
+VAT notices in numerical order
+Explore the topic
+VAT
+Dealing with HMRC
+Is this page useful?
+Yes
+No
+Report a problem with this page
+Services and information
+Benefits Births, death, marriages and care Business and self-employed Childcare and parenting Citizenship and living in the UK Crime, justice and the law Disabled people Driving and transport Education and learning Employing people Environment and countryside Housing and local services Money and tax Passports, travel and living abroad Visas and immigration Working, jobs and pensions
+Government activity
+Departments News Guidance and regulation Research and statistics Policy papers and consultations Transparency How government works Get involved
+Help Privacy Cookies Accessibility statement Contact Terms and conditions Rhestr o Wasanaethau Cymraeg Government Digital Service
+ All content is available under the Open Government Licence v3.0, except where otherwise stated
+© Crown copyright

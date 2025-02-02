@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GenAI-Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        * {
+            white-space: pre-line
+        }
+        * {
+            box-sizing: border-box
+        }
+/* Set height of body and the document to 100% */
+        body, html {
+            height: 100%;
+            margin: 100;
+            font-family: monospace;
+        }
+        #chatbox {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        margin-top: 50px;
+      }
+      #userInput {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 60px;
+      }
+      #textInput {
+        width: 100%;
+        border: none;
+        border-bottom: 3px solid #676767;
+        font-family: monospace;
+        font-size: 15px;
+      }
+      .userText {
+        color: #ffffff;
+        font-family: monospace;
+        font-size: 12px;
+        text-align: right;
+        line-height: 30px;
+      }
+      .userText span {
+        background-color: #09a4c3;
+        padding: 5px;
+        border-radius: 2px;
+      }
+      .botText {
+        color: #09a4c3;
+        font-family: monospace;
+        font-size: 12px;
+        text-align: left;
+        line-height: 30px;
+      }
+      .botText span {
+        background-color: #ffffff00;
+        padding: 10px;
+        border-radius: 2px;
+      }
+      #tidbit {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+      }
+      .boxed {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 40px;
+        border: 2px dotted #09a4c3;
+      }
+    </style>
+</head>
+<body>
+<div>
+        <h3 align="center" style="background-color: #09a4c3; padding: 15px; color: #ffffff;">
+          <b>Type a message to interact with the virtual assistant.</b>
+
+        </h3>
+
+
+        <p align="center"><img src="../static/chatbot.png" alt="Python-BOT" height="80" width="80"></p>
+        <div class="boxed">
+            <div>
+                <div id="chatbox">
+                    <p class="botText">
+                        <span style="font-weight: bold"> Hello. How can I help you today?</span>
+                    </p>
+                </div>
+                <div id="userInput">
+                    <input id="textInput" type="text" name="msg" placeholder="Message" />
+                </div>
+            </div>
+            <script>
+                function getBotResponse() {
+                    var rawText = $("#textInput").val();
+                    var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+                    $("#textInput").val("");
+                    $("#chatbox").append(userHtml);
+                    document
+                        .getElementById("userInput")
+                        .scrollIntoView({ block: "start", behavior: "smooth" });
+                    $.get("/get", { msg: rawText }).done(function (data) {
+                        var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+                        $("#chatbox").append(botHtml);
+                        document
+                            .getElementById("userInput")
+                            .scrollIntoView({ block: "start", behavior: "smooth" });
+                    });
+                }
+                $("#textInput").keypress(function (e) {
+                    if (e.which == 13) {
+                        getBotResponse();
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

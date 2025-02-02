@@ -67,7 +67,7 @@ def upsert_chunks_from(text_file):
 
         dict = {
             "id": str(i),
-            "values": embed_chunk(chunk),
+            "values": embed_chunks(chunk),
             "metadata": {
                 "chunk": chunk,
             }
@@ -77,10 +77,6 @@ def upsert_chunks_from(text_file):
 
         index.upsert(vectors=[dict])
 
-
-
 # Run the create_index, chunking and upserting from here
-# Depending on how your IDE runs the code you may need to
-# change 'flat_earth.txt' to 'exercise_3/flat_earth.txt'
 create_index(index_name)
-upsert_chunks_from('partial_exemption_uk_gov_extract.txt')
+upsert_chunks_from('data/partial_exemption_uk_gov_extract.txt')

@@ -5,7 +5,7 @@ from pinecone import Pinecone
 from dotenv import load_dotenv
 from _retrieve_chunks import retrieve_chunks
 import os
-import re
+
 
 load_dotenv()
 
@@ -16,13 +16,13 @@ pc = Pinecone(api_key=os.getenv('PINECONE_API_KEY'))
 def inject_context_data(context):
     # Edit this system message
     system_message = f"""
-        You are a chat bot named 'Levy' and you will answer any VAT related queries based on the resource provided as context.
+        You are a chat bot and will answer any related queries based on the resource provided as context.
 
         Your personality is friendly and professional.
 
-        You will introduce yourself before answering each question.
+        Redirect the conversation to https://www.gov.uk/guidance/partial-exemption-vat-notice-706 only if the user query is unrelated to the resource.
 
-        You will conclude the conversation in a polite manner, directing the conversation to https://www.gov.uk/guidance/partial-exemption-vat-notice-706
+        You will conclude the conversation in a polite manner.
 
         Here is the relevant resource:
 
@@ -61,17 +61,20 @@ def bold_str(s):
 # Call the chatbot to respond to a question and get the answer based on the static injected context
 # Example question: If the earth is flat, why do you only see the top half of a ship
 
-question = 'What is the partial exemption method?'
-answer = respond_to_question(question)
+def run_chatbot():
+    question = 'When was the partial exemption method created?'
+    answer = respond_to_question(question)
 
-tax_query = f"""
-{bold_str("Question")}:
+    tax_query = f"""
+    {bold_str("Question")}:
 
-{question}
+    {question}
 
-{bold_str("Answer")}:
+    {bold_str("Answer")}:
 
-{answer}
-"""
+    {answer}
+    """
+    print(tax_query)
 
-print(tax_query)
+if __name__ == "__main__":
+ run_chatbot()

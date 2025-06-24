@@ -47,7 +47,7 @@ def retrieve_github_tennis_stats(repo_name, retrieval_start_year=MOST_RECENT_YEA
     list_of_urls = [l.replace("github", "raw.githubusercontent") for l in list_of_urls]
     list_of_urls = [l.replace("blob/", "refs/heads/") for l in list_of_urls]
 
-    # Filter URLs to include only those with a year in the filename and ensure they are from 2024 or later
+    # Filter URLs to include only those with that match the retrieval start year or later
     list_of_urls = [l for l in list_of_urls if re.search(r"\d{4}.csv", l)]
     list_of_urls = [l for l in list_of_urls if int(re.sub(r"\D","",l)) >= retrieval_start_year]
 

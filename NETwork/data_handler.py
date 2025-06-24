@@ -15,7 +15,6 @@ pd.set_option('display.max_colwidth', None)
 # Get most recent year to use as data retrieval parameter
 MOST_RECENT_YEAR = datetime.now().year - 1
 
-
 def retrieve_github_tennis_stats(repo_name, retrieval_start_year=MOST_RECENT_YEAR):
     """
     Retrieves the latest tennis statistics from a GitHub repository.

@@ -77,7 +77,7 @@ def _download_github_tennis_data_to_local_repo(repo_name, retrieval_start_year=M
 
     # If there are no new URLs and it's not the initial run, do not update the local repository
     if not initial and new_urls.empty:
-        print("No new URLs found, local repo will not be updated.")
+        print(f"No new URLs found containing '{tour_type}' data, local repo will not be updated.")
         local_update_required=False
         return local_update_required
 
@@ -113,7 +113,6 @@ def update_tennis_stats_blob_storage_resource():
         local_repo_updated = _download_github_tennis_data_to_local_repo(repo)
         if local_repo_updated:
             _upload_local_repo_tennis_data_to_azure_blob_storage(REPO_LOCAL, repo)
-        print(f"Github repo handler script executed successfully for repo: {repo}.\n")
 
 # Define main if running as standalone script
 def main():

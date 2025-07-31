@@ -12,7 +12,7 @@ load_dotenv()
 
 oa = OpenAI()
 pc = Pinecone(api_key=os.getenv('PINECONE_API_KEY'))
-index_name = 'pe-tax-info'
+index_name = 'tennis-glossary'
 
 # We'll use this function to embed the chunk
 # We'll also use it to embed the question for query
@@ -79,4 +79,4 @@ def upsert_chunks_from(text_file):
 
 # Run the create_index, chunking and upserting from here
 create_index(index_name)
-upsert_chunks_from('data/partial_exemption_uk_gov_extract.txt')
+upsert_chunks_from('data/glossary-tennis.csv')

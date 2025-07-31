@@ -13,7 +13,7 @@ load_dotenv()
 
 oa = OpenAI()
 pc = Pinecone(api_key=os.getenv('PINECONE_API_KEY'))
-index_name = 'pe-tax-info'
+index_name = 'tennis-glossary'
 
 # This will be used to retrieve chunks from Pinecone
 # Default chunks to retrieve is 5

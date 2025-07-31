@@ -20,7 +20,7 @@ def inject_context_data(context):
 
         Your personality is friendly and professional.
 
-        Redirect the conversation to https://www.gov.uk/guidance/partial-exemption-vat-notice-706 only if the user query is unrelated to the resource.
+        Redirect the conversation to https://www.itftennis.com  only if the user query is unrelated to the resource.
 
         You will conclude the conversation in a polite manner.
 
@@ -62,7 +62,7 @@ def bold_str(s):
 # Example question: If the earth is flat, why do you only see the top half of a ship
 
 def run_chatbot():
-    question = 'When was the partial exemption method created?'
+    question = 'What type of tennis play styles are there?'
     answer = respond_to_question(question)
 
     tax_query = f"""

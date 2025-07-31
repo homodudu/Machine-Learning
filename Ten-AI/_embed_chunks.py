@@ -7,7 +7,7 @@ load_dotenv()
 
 oa = OpenAI()
 pc = Pinecone(api_key=os.getenv('PINECONE_API_KEY'))
-index_name = 'pe-tax-info'
+index_name = 'tennis-glossary'
 
 # We'll use this function to embed the chunk
 # We'll also use it to embed the question for query

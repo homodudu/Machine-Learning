@@ -78,22 +78,26 @@ def _download_github_tennis_data_to_local_repo(repo_name, retrieval_start_year=M
     # If there are no new URLs and it's not the initial run, do not update the local repository
     if not initial and new_urls.empty:
         print(f"No new URLs found containing '{tour_type}' data, local repo will not be updated.")
-        local_update_required=False
-        return local_update_required
+        return False
 
-    # Else if it is the initial run, create the local repository with the new URLs
-    else:
-        if not os.path.exists(stat_local_repo_path):
-            pd.DataFrame().to_csv(stat_local_repo_path, sep=',', encoding='utf_8_sig', index=False)
+    # If it is the initial run, ensure the stats file exists
+    if initial and not os.path.exists(stat_local_repo_path):
+        pd.DataFrame().to_csv(stat_local_repo_path, sep=',', encoding='utf_8_sig', index=False)
 
-        # If there are new URLs, download and print the content
+    # If there are new URLs, download and print the content
+    if not new_urls.empty:
         df_master = _download_and_update_url_content_in_local_repo(new_urls, stat_local_repo_path)
         print(df_master)
         print(f"Updated local data archive with {repo_name} data.")
+        return True
 
-        # Flag that the local repository was updated
-        local_repo__updated=True
-        return local_repo__updated
+    # If initial run but no new URLs, still return True (repo initialized)
+    if initial:
+        print(f"Initialized local repo for '{tour_type}' data.")
+        return True
+
+    # Default: no update
+    return False
 
 # Function to upload local repository data to Azure Blob Storage and overwrite existing data
 def _upload_local_repo_tennis_data_to_azure_blob_storage(src_directory, repo_name):
@@ -107,16 +111,16 @@ def _upload_local_repo_tennis_data_to_azure_blob_storage(src_directory, repo_nam
             print(f"Uploaded '{filename}' from directory '{src_directory}' to blob storage.\n")
 
 # Main function to update Azure blob storage with Github tennis stat data - to be equipped as an agentic tool.
-def update_tennis_stats_blob_storage_resource():
-    repo_list = {REPO_ATP, REPO_WTA}
-    for repo in repo_list:
+def update_tennis_stats_blob_storage_resource(*repos):
+    repo_set = set(repos)
+    for repo in repo_set:
         local_repo_updated = _download_github_tennis_data_to_local_repo(repo)
         if local_repo_updated:
             _upload_local_repo_tennis_data_to_azure_blob_storage(REPO_LOCAL, repo)
 
 # Define main if running as standalone script
 def main():
-    update_tennis_stats_blob_storage_resource()
+    update_tennis_stats_blob_storage_resource(REPO_ATP, REPO_WTA)
 
 # Execute main if running as standalone script
 if __name__ == "__main__":

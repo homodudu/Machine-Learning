@@ -1,0 +1,30 @@
+{
+  "@odata.context": "https://agent-ai-tennis-search.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DDCD264E8BAD8A\"",
+  "name": "tennis-betting-all-indexer",
+  "description": null,
+  "dataSourceName": "tennis-betting-all-datasource",
+  "skillsetName": "tennis-betting-all-skillset",
+  "targetIndexName": "tennis-betting-all-index",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": 0,
+    "maxFailedItemsPerBatch": 0,
+    "configuration": {
+      "dataToExtract": "contentAndMetadata",
+      "parsingMode": "default"
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_name",
+      "targetFieldName": "title",
+      "mappingFunction": null
+    }
+  ],
+  "outputFieldMappings": [],
+  "cache": null,
+  "encryptionKey": null
+}

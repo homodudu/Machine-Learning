@@ -16,7 +16,7 @@ REPO_LOCAL = os.getenv("GITHUB_LOCAL_REPO")
 pd.set_option('display.max_colwidth', None)
 
 # Get most recent year to use as data retrieval parameter
-MOST_RECENT_YEAR = datetime.now().year - 1
+MOST_RECENT_YEAR = datetime.now().year - 2
 
 # Initialize the GitHub client
 github_token = os.getenv("GITHUB_ACCESS_TOKEN")
@@ -24,7 +24,7 @@ github_client = Github(github_token)
 
 # Initialise the azure blob service container client
 BLOB_CONNECTION_STRING = os.getenv("AZURE_BLOB_CONNECTION_STRING")
-BLOB_CONTAINER_NAME = os.getenv("AZURE_BLOB_CONTAINER_NAME")
+BLOB_CONTAINER_NAME = os.getenv("AZURE_BLOB_CONTAINER_NAME_STAT")
 blob_service_client = BlobServiceClient.from_connection_string(BLOB_CONNECTION_STRING)
 container_client = blob_service_client.get_container_client(BLOB_CONTAINER_NAME)
 

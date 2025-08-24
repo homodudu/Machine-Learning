@@ -10,8 +10,8 @@
       "context": "/document",
       "defaultLanguageCode": "en",
       "textSplitMode": "pages",
-      "maximumPageLength": 2000,
-      "pageOverlapLength": 500,
+      "maximumPageLength": 1000,
+      "pageOverlapLength": 100,
       "maximumPagesToTake": 0,
       "unit": "characters",
       "inputs": [

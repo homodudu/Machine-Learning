@@ -1,0 +1,250 @@
+import os
+import pandas as pd
+from dotenv import load_dotenv
+from azure.core.credentials import AzureKeyCredential
+from azure.search.documents import SearchClient
+from azure.search.documents.indexes import SearchIndexClient, SearchIndexerClient
+from azure.search.documents.indexes.models import (
+    SearchIndex,
+    SearchIndexer,
+    IndexingParameters,
+    SimpleField,
+    SearchableField,
+    SearchFieldDataType,
+    SearchField,
+    VectorSearch,
+    HnswAlgorithmConfiguration,
+    HnswParameters,
+    VectorSearchProfile,
+    SearchIndexerDataSourceConnection,
+    SearchIndexerDataContainer,
+    SearchIndexerDataSourceType as DataSourceType
+)
+from azure.storage.blob import BlobServiceClient
+from openai import AzureOpenAI
+
+# Load environment variables from .env file
+load_dotenv()
+blob_atp = os.getenv("AZURE_BLOB_ATP")
+blob_wta = os.getenv("AZURE_BLOB_WTA")
+
+# Azure Blob Storage settings
+BLOB_CONNECTION_STRING = os.getenv("AZURE_BLOB_CONNECTION_STRING")
+BLOB_CONTAINER_NAME = os.getenv("AZURE_BLOB_CONTAINER_NAME")
+BLOB_DATA_SOURCE_NAME = os.getenv("AZURE_BLOB_DATA_SOURCE_NAME")
+
+# Azure AI Search (Vector Store) settings
+SEARCH_ENDPOINT = os.getenv("AZURE_AI_SEARCH_ENDPOINT")
+SEARCH_API_KEY = os.getenv("AZURE_AI_SEARCH_API_KEY")
+SEARCH_INDEX_NAME =  os.getenv("AZURE_AI_SEARCH_INDEX")
+SEARCH_INDEXER_NAME =  os.getenv("AZURE_AI_SEARCH_INDEXER")
+
+# Azure OpenAI (Embedding) client settings
+OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+
+# Initialize Azure OpenAI client
+embedding_client = AzureOpenAI(
+    api_version="2024-12-01-preview",
+    api_key=OPENAI_API_KEY,
+    azure_endpoint=OPENAI_ENDPOINT
+)
+
+# Initialize Azure Search Client
+search_client = SearchClient(
+        endpoint=SEARCH_ENDPOINT,
+        index_name=SEARCH_INDEX_NAME,
+        credential=AzureKeyCredential(SEARCH_API_KEY)
+    )
+
+# Initialize Azure Search Index Client
+index_client = SearchIndexClient(
+    endpoint=SEARCH_ENDPOINT,
+    credential=AzureKeyCredential(SEARCH_API_KEY)
+    )
+
+# Initialize Azure Search Indexer Client
+indexer_client = SearchIndexerClient(
+    endpoint=SEARCH_ENDPOINT,
+    credential=AzureKeyCredential(SEARCH_API_KEY)
+    )
+
+# Create the data source connection for Azure Blob Storage
+data_source = SearchIndexerDataSourceConnection(
+        name=BLOB_DATA_SOURCE_NAME,
+        type=DataSourceType.AZURE_BLOB,
+        connection_string=BLOB_CONNECTION_STRING,
+        container=SearchIndexerDataContainer(name=BLOB_CONTAINER_NAME)
+    )
+
+# Function to infer schema from CSV file
+def infer_schema_from_csv(csv_path):
+    df = pd.read_csv(csv_path, nrows=10)  # Read a sample for type inference
+    fields = []
+    for col in df.columns:
+        # Infer type
+        if pd.api.types.is_integer_dtype(df[col]):
+            field_type = "Edm.Int64"
+            field = SimpleField(name=col, type=field_type)
+        elif pd.api.types.is_float_dtype(df[col]):
+            field_type = "Edm.Double"
+            field = SimpleField(name=col, type=field_type)
+        else:
+            field_type = "Edm.String"
+            field = SearchableField(name=col, type=field_type)
+        # Make the first column the key
+        # if col == df.columns[0]:
+        #     field.key = True
+        fields.append(field)
+    return fields
+
+def create_or_update_search_indexer(data_source_name, index_name, indexer_name):
+    # Set up indexing parameters for CSV (delimitedText)
+    indexing_parameters = IndexingParameters(
+        configuration={
+            "parsingMode": "delimitedText",
+            "firstLineContainsHeaders": True,
+            "delimiter": ","
+        }
+    )
+
+    indexer = SearchIndexer(
+        name=indexer_name,
+        data_source_name=data_source_name,
+        target_index_name=index_name,
+        parameters=indexing_parameters
+    )
+
+    result = indexer_client.create_or_update_indexer(indexer)
+    print(f"Indexer '{indexer_name}' created or updated.")
+    return result
+
+def create_or_update_search_index(index_name):
+    # Define the index schema (fields)
+    id_field = SimpleField(name="id", type="Edm.String", key=True)
+    content_field = SearchableField(name="content", type="Edm.String")
+    embedding_field = SearchField(
+        name="embedding",
+        type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
+        vector_search_dimensions=1536,  # Set to your embedding vector size
+        vector_search_profile_name="default"
+        )
+    inferred_fields = infer_schema_from_csv("NETwork/atp_stat_data.csv")
+
+    fields = [id_field, content_field, embedding_field] + inferred_fields
+
+    # Define the vector search profile and algorithm
+    vector_search = VectorSearch(
+        profiles=[
+            VectorSearchProfile(
+                name="default",
+                algorithm_configuration_name="default-hnsw"
+            )
+        ],
+        algorithms=[
+            HnswAlgorithmConfiguration(
+                name="default-hnsw",
+                parameters=HnswParameters(metric="cosine")
+            )
+        ]
+    )
+
+    # Create the search index
+    index = SearchIndex(
+        name=index_name,
+        fields=fields,
+        vector_search=vector_search
+    )
+
+    # Create or update the index
+    result = index_client.create_or_update_index(index)
+    print(f"Index '{index_name}' created or updated.")
+    return result
+
+def download_blob_to_text(blob_connection_string, container_name, blob_name):
+    blob_service_client = BlobServiceClient.from_connection_string(blob_connection_string)
+    blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
+    blob_data = blob_client.download_blob().readall()
+    return blob_data.decode('utf-8')
+
+def get_embedding(text, openai_api_key):
+    embedding_client.api_key = openai_api_key
+    response = embedding_client.embeddings.create(
+        input=text,
+        model="text-embedding-3-small"
+    )
+    for item in response.data:
+        length = len(item.embedding)
+        print(
+            f"data[{item.index}]: length={length}, "
+            f"[{item.embedding[0]}, {item.embedding[1]}, "
+            f"..., {item.embedding[length-2]}, {item.embedding[length-1]}]"
+    )
+    return response
+
+def upload_to_vector_store(endpoint, api_key, index_name, doc):
+    search_client = SearchClient(endpoint=endpoint,
+                                 index_name=index_name,
+                                 credential=AzureKeyCredential(api_key))
+    result = search_client.upload_documents(documents=[doc])
+    print("Upload result:", result)
+    return result
+
+def embed_existing_index_data(
+    content_field="content",
+    embedding_field="embedding",
+    batch_size=100
+):
+    # Retrieve all documents (paging if needed)
+    results = search_client.search(search_text="*", select=["id", content_field], top=batch_size)
+    docs_to_update = []
+    for doc in results:
+        content = doc[content_field]
+        # Generate embedding
+        embedding = embedding_client.embeddings.create(
+            input=content,
+            model="text-embedding-3-small"
+        ).data[0].embedding
+        # Update document with embedding
+        doc[embedding_field] = embedding
+        docs_to_update.append(doc)
+
+    # Upload updated documents back to the index
+    if docs_to_update:
+        result = search_client.upload_documents(documents=docs_to_update)
+        print("Upload result:", result)
+    else:
+        print("No documents found to update.")
+
+if __name__ == "__main__":
+    # Create or update the search index
+    create_or_update_search_index(SEARCH_INDEX_NAME)
+
+    # Create or update the search indexer
+    create_or_update_search_indexer(BLOB_DATA_SOURCE_NAME, SEARCH_INDEX_NAME, SEARCH_INDEXER_NAME)
+
+    indexer_client.reset_indexer(SEARCH_INDEXER_NAME)
+
+    # Create or update the data source connection
+    indexer_client.create_or_update_data_source_connection(data_source)
+
+    # Run the indexer to import data
+    indexer_client.run_indexer(SEARCH_INDEXER_NAME)
+
+    # # Download blob content
+    # text_content = download_blob_to_text(BLOB_CONNECTION_STRING, BLOB_CONTAINER_NAME, BLOB_DATA_SOURCE_NAME)
+
+    # # # Generate embedding vector from the response content
+    # embedding = get_embedding(text_content, OPENAI_API_KEY).data[0].embedding
+
+    # # Prepare document for vector store
+    # document = {
+    #     "id": BLOB_DATA_SOURCE_NAME,
+    #     "content": text_content,
+    #     "embedding": embedding
+    # }
+
+    # # Upload to Azure Vector Store (Azure AI Search)
+    # upload_result = upload_to_vector_store(SEARCH_ENDPOINT, SEARCH_API_KEY, SEARCH_INDEX_NAME, document)
+
+    embed_existing_index_data(SEARCH_ENDPOINT, SEARCH_API_KEY, SEARCH_INDEX_NAME)

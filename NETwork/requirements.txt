@@ -4,8 +4,9 @@ azure-search-documents
 azure-storage-blob
 azure-identity
 azure-ai-projects
-azure-search-documents
 openai
 python-dotenv
 PyGithub
 requests
+pandas
+fastapi

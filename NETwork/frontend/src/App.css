@@ -61,7 +61,7 @@ html, body {
   --color-text-placeholder: #999;
   --color-bg-primary: #fff;
   --color-bg-secondary: #393939;
-  --color-bg-sidebar: #74470863;
+  --color-bg-sidebar: #233043;
   --color-border-hr: #fff;
   --color-hover-secondary: #39393929;
   --color-hover-secondary-alt: #8997af;
@@ -119,8 +119,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-bg-secondary);
-  background: var(--color-hover-secondary);
+  color: var(--color-text-primary);
+  background: var(--color-bg-secondary);
   transition: 0.7s ease;
 }
 
@@ -302,7 +302,7 @@ html, body {
   gap: 12px;
   font-size: 1rem;
   color: var(--color-text-primary);
-  background: var(--color-hover-secondary);
+  background: var(--color-bg-secondary);
 }
 
 .sidebar-footer .theme-toggle:active {

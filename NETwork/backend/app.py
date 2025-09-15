@@ -10,7 +10,7 @@ This script sets up a FastAPI application for the NETwork project.
 # Example FastAPI app
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from handlers.handler_agent_conversation import agent_conversation
+from handlers.handler_agent_conversation import AgentConversationHandler
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -27,6 +27,8 @@ app.add_middleware(
 @app.post("/api/generate_response")
 async def generate_response(request: Request):
     data = await request.json()
-    # data['contents'] should be a list of {role, content}
-    response, thread = agent_conversation(data["contents"])
+    handler = AgentConversationHandler()
+    contents = data["contents"]
+    thread = data.get("thread_id")
+    response, thread = handler.agent_conversation(contents, thread=thread)
     return {"response": response, "thread_id": thread.id}

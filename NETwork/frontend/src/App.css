@@ -49,11 +49,6 @@ body,
   z-index: 15;
 }
 
-.overlay.show {
-  opacity: 0.3;
-  pointer-events: auto;
-}
-
 .app-container {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
@@ -66,6 +61,11 @@ body,
   top: 0;
   width: calc(100vw / var(--viewport-scale));
   z-index: 30;
+}
+
+.app-container .overlay.show {
+  opacity: 1.0;
+  pointer-events: auto;
 }
 
 .app-container.light-theme {
@@ -510,8 +510,9 @@ html, body {
 
 .sidebar-locked .sidebar-pin {
   color: var(--color-text-primary);
+  background: var(--color-bg-button-primary);
   transform: rotate(90deg);
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 .welcome-container {
@@ -543,9 +544,10 @@ html, body {
 
 .welcome-logo {
   display: block;
-  height: 420px;
+  height: 470px;
+  width: 470px;
   margin: 0 auto 0px auto;
-  width: 420px;
+
 }
 
 .welcome-logo-wrapper {

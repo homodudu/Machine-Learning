@@ -157,10 +157,10 @@ const generateResponse = async (conversation, botMessageId) => {
     const res = await fetch(process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_DEV, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ contents: formattedMessages }),
+      body: JSON.stringify({ contents: formattedMessages, thread_id: conversation.thread_id || null }),
     });
     const data = await res.json();
-    const threadId = data.thread_Id;
+    const threadId = data.thread_id;
     console.log("Agent API response:", data);
 
     // Store threadId in the current conversation
@@ -185,7 +185,7 @@ const generateResponse = async (conversation, botMessageId) => {
   return (
     <div className={`app-container ${theme === "light" ? "light-theme" : "dark-theme"}`}>
       <div
-        className={`overlay ${isSidebarOpen ? "show" : "hide"}`}
+        className={`overlay ${isSidebarOpen & !sidebarLocked ? "show" : "hide"}`}
         onClick={() => {
           setIsSidebarOpen(false);
           setSidebarLocked(false);

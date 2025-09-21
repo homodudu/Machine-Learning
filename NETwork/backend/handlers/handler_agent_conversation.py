@@ -82,10 +82,13 @@ class AgentConversationHandler:
         connect_agent = self.get_connect_agent()
         if thread is None:
             thread = self.create_thread()
-            print(f"\nCreated thread, ID: {thread.id}\n")
+            print(f"\nCreated new thread, ID: {thread.id}\n")
+        elif isinstance(thread, str):
+            thread = self.get_thread(thread)
+            print(f"\nUsing existing thread, ID: {thread.id}\n")
+
         self.send_user_message(thread.id, messages)
         run = self.run_agent(thread.id, connect_agent.id)
-
         if run.status == "failed":
             return f"Run failed: {run.last_error}", thread
         else:

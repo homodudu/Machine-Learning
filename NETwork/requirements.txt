@@ -10,3 +10,4 @@ PyGithub
 requests
 pandas
 fastapi
+uvicorn

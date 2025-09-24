@@ -6,7 +6,7 @@
  */
 
 import { ArrowUp } from "lucide-react";
-import { useState } from "react";
+import { useState} from "react";
 
 const PromptForm = ({
   conversations,
@@ -49,13 +49,15 @@ const PromptForm = ({
     };
 
     // Update UI with user message
-    setConversations(
-      conversations.map((conv) =>
+    setConversations((prev) =>
+      prev.map((conv) =>
         conv.id === activeConversation
           ? { ...conv, title: newTitle, messages: [...conv.messages, userMessage] }
           : conv
       )
     );
+
+
 
     setPromptText("");
 

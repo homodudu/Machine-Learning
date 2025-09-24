@@ -200,12 +200,12 @@ const generateResponse = async (conversation, botMessageId) => {
             }}
             className="sidebar-pin"
           >
-
             <Menu size={18} />
           </button>
         </header>
         <div className="messages-container" ref={messagesContainerRef}>
-          {currentConversation.messages.length === 0 ? (
+          {/* Show welcome screen only when there are no messages */}
+          {currentConversation.messages.length === 0 && (
             <div className="welcome-logo-wrapper">
               <img
                 className="welcome-logo"
@@ -214,11 +214,11 @@ const generateResponse = async (conversation, botMessageId) => {
               />
               <h1 className="welcome-heading">NETwork</h1>
             </div>
-          ) : (
-            currentConversation.messages.map((message) => (
-              <Message key={message.id} message={message} theme={theme} />
-            ))
           )}
+          {/* Always render the messages list */}
+          {currentConversation.messages.map((message) => (
+            <Message key={message.id} message={message} theme={theme} />
+          ))}
         </div>
         <div className="prompt-container">
           <div className="prompt-wrapper">

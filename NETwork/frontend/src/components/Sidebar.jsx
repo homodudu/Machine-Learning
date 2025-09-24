@@ -68,7 +68,7 @@ const Sidebar = ({
         </button>
           <button
             className="new-chat-btn"
-            title="Start a new chat."
+            title="Start a new conversation."
             onClick={createNewConversation}
           >
           <Plus size={20} />
@@ -86,13 +86,15 @@ const Sidebar = ({
               onClick={() => setActiveConversation(conv.id)}
             >
               <div className="conversation-icon-title">
-                <div className="conversation-icon">
-                  <History size={14} />
+                <div
+                  className="conversation-icon">
+                  <History size={14}/>
                 </div>
                 <span className="conversation-title">{conv.title}</span>
               </div>
               <button
                 className={`delete-btn${conversations.length > 1 || conv.title !== "New Chat" ? "" : " hide"}`}
+                title="Delete conversation."
                 onClick={(e) => deleteConversation(conv.id, conv.thread_Id, e)}
               >
                 <Trash2 size={16} />

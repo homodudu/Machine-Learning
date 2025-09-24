@@ -20,9 +20,9 @@ body,
 
 :root {
   --color-action-primary: #4a3304;
-  --color-bg-button-primary: #605858;
+  --color-bg-button-primary: #242222;
   --color-bg-primary: #000;
-  --color-bg-secondary: #233043;
+  --color-bg-secondary: #0a1311;
   --color-bg-sidebar: #1e1d1d64;
   --color-border-hr: #000;
   --color-error-text: #690e17;
@@ -34,19 +34,6 @@ body,
   --sidebar-closed-width: 110px;
   --sidebar-open-width: 260px;
   --viewport-scale: 1.00;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  transition: 0.2s ease;
-  width: 100%;
-  z-index: 15;
 }
 
 .app-container {
@@ -63,15 +50,28 @@ body,
   z-index: 30;
 }
 
+.app-container .overlay {
+  background: rgb(0, 0, 0);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: 0.8s ease;
+  width: 100%;
+  z-index: 15;
+}
+
 .app-container .overlay.show {
-  opacity: 1.0;
+  opacity: 0.8;
   pointer-events: auto;
 }
 
 .app-container.light-theme {
   --color-bg-primary: #ffffff;
-  --color-bg-secondary: #393939;
-  --color-bg-sidebar: #233043;
+  --color-bg-secondary: #2f2f2f;
+  --color-bg-sidebar: #0a1311;
   --color-border-hr: #fff;
   --color-hover-secondary: #39393929;
   --color-hover-secondary-alt: #8997af;
@@ -107,13 +107,13 @@ body,
   color: var(--color-text-primary);
   cursor: pointer;
   display: flex;
-  height: 30px;
+  height: 20px;
+  width: 20px;
   justify-content: center;
   margin-right: 30px;
   opacity: 0;
   padding: 4px;
   transition: 0.3s ease;
-  width: 30px;
 }
 
 .conversation-item .delete-btn:hover {
@@ -333,7 +333,7 @@ html, body {
   overflow: auto;
   padding-left: 24px;
   resize: none !important;
-  width: 95%;
+  width: 94%;
 }
 
 .prompt-form .prompt-input::placeholder {

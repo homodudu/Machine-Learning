@@ -1,6 +1,7 @@
 """
 This script sets up a FastAPI application for the NETwork project.
 
+- Entry point for running the FastAPI backend server.
 - Enables CORS to allow requests from the frontend (e.g., http://localhost:3000).
 - Imports and uses the agent_conversation handler for processing chat requests.
 - Exposes a POST endpoint at /api/agent that receives JSON data from the frontend,

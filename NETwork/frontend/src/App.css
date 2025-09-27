@@ -373,10 +373,10 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  left: auto;
   overflow: hidden;
   position: sticky;
-  right: 0;
+  left: 0;
+  right: auto;
   top: 0;
   transition: width 0.9s ease;
   width: var(--sidebar-open-width);
@@ -601,10 +601,10 @@ html, body {
   }
   .sidebar {
     height: 100%;
-    left: auto;
+    right: auto;
     position: fixed;
-    right: calc(-1 * var(--sidebar-open-width));
-    transition: right 0.3s ease;
+    left: calc(-1 * var(--sidebar-open-width));
+    transition: left 0.3s ease;
   }
   .sidebar.closed {
     width: var(--sidebar-open-width);

@@ -18,6 +18,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [sidebarLocked, setSidebarLocked] = useState(false);
+
   // Use system theme preference on first load
   const [theme, setTheme] = useState(() => {
     // Only use saved theme if it exists, otherwise use system preference
@@ -25,14 +26,19 @@ const App = () => {
     if (saved) return saved;
     return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   });
+
+  // Load stored conversations on first load
   const [conversations, setConversations] = useState(() => {
     try {
+      // Only load saved conversations if they exist, otherwise use default conversation
       const saved = localStorage.getItem("conversations");
       return saved ? JSON.parse(saved) : [DEFAULT_CONVERSATION];
     } catch {
       return [DEFAULT_CONVERSATION];
     }
   });
+
+  // Set saved active conversation if it exists, set default active conversation
   const [activeConversation, setActiveConversation] = useState(() =>
     localStorage.getItem("activeConversation") || "default"
   );
@@ -149,21 +155,24 @@ const App = () => {
   };
 
 const generateResponse = async (conversation, botMessageId) => {
+  // Format messages for the API request
   const formattedMessages = conversation.messages?.map((msg) => ({
     role: msg.role === "bot" ? "assistant" : msg.role,
     content: msg.content,
   }));
   try {
+    // Make a POST request to the API backend endpoint
     const res = await fetch(process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_DEV, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ contents: formattedMessages, thread_id: conversation.thread_id || null }),
     });
+    // Parse the JSON response
     const data = await res.json();
-    const threadId = data.thread_id;
+    const threadId = data.thread_id; // Extract thread ID from response
     console.log("Agent API response:", data);
 
-    // Store threadId in the current conversation
+    // Update the conversation state with the new thread ID
     setConversations((prev) =>
       prev.map((conv) =>
         conv.id === conversation.id
@@ -172,27 +181,35 @@ const generateResponse = async (conversation, botMessageId) => {
       )
     );
 
+    // Check for errors in the response
     if (!res.ok) throw new Error(data.error?.message || "API error");
+
+    // Handle the response text
     const responseText = typeof data.response === "string" ? data.response.trim(): "No response from agent.";
-    typingEffect(responseText, botMessageId);
+    typingEffect(responseText, botMessageId); // Display the response with a typing effect
   } catch (error) {
-    setIsLoading(false);
-    updateBotMessage(botMessageId, error.message, true);
+    setIsLoading(false); // Stop loading state
+    updateBotMessage(botMessageId, error.message, true); // Update the bot message with the error
   }
 };
 
   // Render
   return (
     <div className={`app-container ${theme === "light" ? "light-theme" : "dark-theme"}`}>
+      {/* Main div container that wraps the application */}
       <div
+        //Overlay div container that appears when the sidebar is open and unlocked
         className={`overlay ${isSidebarOpen & !sidebarLocked ? "show" : "hide"}`}
         onClick={() => {
           setIsSidebarOpen(false);
           setSidebarLocked(false);
         }}
-      ></div>
+      >
+      </div>
+        {/* Main container that contains header, messages, prompt and footer elements */}
       <main className="main-container">
         <header className="main-header">
+          {/* A header with a menu button to toggle the sidebar. */}
           <button
             onClick={() => {
               setIsSidebarOpen(true);
@@ -204,7 +221,7 @@ const generateResponse = async (conversation, botMessageId) => {
           </button>
         </header>
         <div className="messages-container" ref={messagesContainerRef}>
-          {/* Show welcome screen only when there are no messages */}
+          {/* A messages container that displays either a welcome message or a list of messages */}
           {currentConversation.messages.length === 0 && (
             <div className="welcome-logo-wrapper">
               <img
@@ -215,12 +232,12 @@ const generateResponse = async (conversation, botMessageId) => {
               <h1 className="welcome-heading">NETwork</h1>
             </div>
           )}
-          {/* Always render the messages list */}
           {currentConversation.messages.map((message) => (
             <Message key={message.id} message={message} theme={theme} />
           ))}
         </div>
         <div className="prompt-container">
+          {/* A prompt container for user input. */}
           <div className="prompt-wrapper">
             <PromptForm
               conversations={conversations}
@@ -233,11 +250,14 @@ const generateResponse = async (conversation, botMessageId) => {
           </div>
         </div>
         <p className="welcome-text">
-          An AI-powered multi-agent chat application delivering tennis instruction, forecasts, betting insights, and strategic recommendations.<br />
+          {/* A footer with a disclaimer about the AI-generated responses. */}
+          An AI-powered multi-agent chat application delivering tennis instruction, forecasts, betting insights, and strategic recommendations.
+          <br />
           Responses are generated by AI for informational purposes only and should not be considered professional advice. Always verify important information independently.
         </p>
       </main>
       <Sidebar
+        // A Sidebar component that manages conversations and theme settings.
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
         sidebarLocked={sidebarLocked}
@@ -253,6 +273,6 @@ const generateResponse = async (conversation, botMessageId) => {
       />
     </div>
   );
-};
+}
 
 export default App;

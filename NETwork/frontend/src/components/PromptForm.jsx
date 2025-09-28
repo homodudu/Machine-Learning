@@ -3,10 +3,11 @@
  * - Handles user input and message submission.
  * - Updates conversation state and triggers bot response.
  * - Displays a send button and manages loading state.
+ * - Auto-grows textarea as user types more lines.
  */
 
 import { ArrowUp } from "lucide-react";
-import { useState} from "react";
+import { useState, useRef, useEffect } from "react";
 
 const PromptForm = ({
   conversations,
@@ -17,7 +18,17 @@ const PromptForm = ({
   setIsLoading,
 }) => {
   const [promptText, setPromptText] = useState("");
+  const textareaRef = useRef(null);
 
+  // Auto-grow textarea height as user types more lines
+  useEffect(() => {
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "auto"; // Reset height
+      textareaRef.current.style.height = textareaRef.current.scrollHeight + "px"; // Set to scrollHeight
+    }
+  }, [promptText]);
+
+  // Ensure the user cannot submit empty message while response is still loading
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isLoading || !promptText.trim()) return;
@@ -57,8 +68,6 @@ const PromptForm = ({
       )
     );
 
-
-
     setPromptText("");
 
     // Add bot "thinking" message after short delay
@@ -71,6 +80,7 @@ const PromptForm = ({
         loading: true,
       };
 
+       // Update UI with bot message
       setConversations((prev) =>
         prev.map((conv) =>
           conv.id === activeConversation
@@ -79,11 +89,13 @@ const PromptForm = ({
         )
       );
 
+      // Trigger backend API call to generate response for the user prompt
       generateResponse(apiConversation, botMessageId);
     }, 300);
   };
 
   return (
+    //Render
     <form className="prompt-form" onSubmit={handleSubmit}>
       <textarea
         id="prompt-input"
@@ -97,6 +109,7 @@ const PromptForm = ({
         rows={1}
         style={{ resize: "vertical" }}
         title="Enter a message. Press Shift + Enter to add a new line."
+        ref={textareaRef}
         onKeyDown={e => {
           if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault();

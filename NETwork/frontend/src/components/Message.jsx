@@ -1,15 +1,20 @@
 /**
  * Message component for NETwork chat application.
- * - Renders a chat message with avatar for bot/user.
+ * - Renders user and bot chat messages.
  * - Applies loading and error styles.
- * - Dynamically selects avatar based on theme.
+ * - Applies avatar is the message is from a bot.
+ * - Dynamically selects avatar colour based on theme.
  */
 
 const Message = ({ message, theme }) => {
+  // Determine if the message is from a bot
   const isBot = message.role === "bot";
+
+  // Select the appropriate avatar based on the theme
   const avatarSrc = theme === "light" ? "NETwork Black.svg" : "NETwork White.svg";
 
   return (
+    //Render
     <div
       id={message.id}
       className={[
@@ -19,6 +24,7 @@ const Message = ({ message, theme }) => {
         message.error && "error"
       ].filter(Boolean).join(" ")}
     >
+      {/* Only render avatar if the message is from a bot */}
       {isBot && (
         <img
           className="avatar"

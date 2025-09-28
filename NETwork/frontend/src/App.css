@@ -314,9 +314,10 @@ html, body {
 .prompt-container .prompt-form {
   align-items: center;
   background: var(--color-bg-secondary);
-  border-radius: 130px;
+  border-radius: 10px;
   display: flex;
-  height: 50px;
+  min-height: 50px;
+  height: auto;
   margin: 0 auto;
   position: relative;
   width: 80%;
@@ -334,6 +335,7 @@ html, body {
   padding-left: 24px;
   resize: none !important;
   width: 94%;
+  transform: height 0.2s;
 }
 
 .prompt-form .prompt-input::placeholder {
@@ -352,7 +354,7 @@ html, body {
   align-items: center;
   background: #919aa6;
   border: none;
-  border-radius: 50%;
+  border-radius: 5%;
   color: #fff;
   cursor: pointer;
   display: none;
@@ -375,8 +377,8 @@ html, body {
   flex-shrink: 0;
   overflow: hidden;
   position: sticky;
-  left: 0;
-  right: auto;
+  left: auto;
+  right: 0;
   top: 0;
   transition: width 0.9s ease;
   width: var(--sidebar-open-width);
@@ -601,9 +603,9 @@ html, body {
   }
   .sidebar {
     height: 100%;
-    right: auto;
+    left: auto;
     position: fixed;
-    left: calc(-1 * var(--sidebar-open-width));
+    right: calc(-1 * var(--sidebar-open-width));
     transition: left 0.3s ease;
   }
   .sidebar.closed {

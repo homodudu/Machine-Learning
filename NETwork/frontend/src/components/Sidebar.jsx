@@ -21,34 +21,35 @@ const Sidebar = ({
   onMouseEnter = () => {},
   onMouseLeave = () => {},
 }) => {
-  // Create new conversation or activate empty one
+  // Create new conversation
   const createNewConversation = () => {
-    const emptyConv = conversations.find((conv) => conv.messages.length === 0);
-    if (emptyConv) {
-      setActiveConversation(emptyConv.id);
-      return;
-    }
     const newId = `conv-${Date.now()}`;
-    setConversations([{ id: newId, title: "New Chat", messages: [] }, ...conversations]);
+    const newConv = { id: newId, title: "New Chat", messages: [] };
+    setConversations(prev => [newConv, ...prev]);
     setActiveConversation(newId);
   };
 
-  // Delete conversation
-  const deleteConversation = (id) => {
-    if (conversations.length === 1) {
-      const newConv = { id: "default", title: "New Chat", messages: [] };
-      setConversations([newConv]);
-      setActiveConversation("default");
-    } else {
-      const updatedConvs = conversations.filter((conv) => conv.id !== id);
-      setConversations(updatedConvs);
-      if (activeConversation === id) {
-        setActiveConversation(updatedConvs[0].id);
+const deleteConversation = (id) => {
+  setConversations(prev => {
+    const updated = prev.filter(conv => conv.id !== id);
+    // If the deleted conversation was active, set a new active conversation
+    if (activeConversation === id) {
+      if (updated.length > 0) {
+        setActiveConversation(updated[0].id);
+      } else {
+        // No conversations left, create/reset to default
+        const defaultConv = { id: "default", title: "New Chat", messages: [] };
+        setConversations([defaultConv]);
+        setActiveConversation("default");
+        return [defaultConv];
       }
     }
-  };
+    return updated;
+  });
+};
 
   return (
+    //Render
     <aside
       className={`sidebar ${isSidebarOpen ? "open" : "closed"}${sidebarLocked ? " sidebar-locked" : ""}`}
       onMouseEnter={onMouseEnter}

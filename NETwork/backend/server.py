@@ -23,7 +23,7 @@ app = FastAPI()
 # Allow CORS for local frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", FRONTEND_URL],
+    allow_origins=["http://localhost:3000", "https://ambitious-water-00b340403.1.azurestaticapps.net"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]

@@ -343,7 +343,7 @@ html, body {
 }
 
 .prompt-form .send-prompt-btn:hover {
-  background: #887d23;
+  background: #fefefe30;
 }
 
 .prompt-wrapper .prompt-form .prompt-input:valid~.send-prompt-btn {
@@ -352,9 +352,9 @@ html, body {
 
 .prompt-wrapper .send-prompt-btn {
   align-items: center;
-  background: #919aa6;
+  background: #ffffff15;
   border: none;
-  border-radius: 5%;
+  border-radius: 100%;
   color: #fff;
   cursor: pointer;
   display: none;

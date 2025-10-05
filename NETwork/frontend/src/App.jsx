@@ -20,10 +20,6 @@ const REACT_APP_GENERATE_RESPONSE_ENDPOINT =
     ? "https://network-api-d8dxcph2d8b9csfj.westeurope-01.azurewebsites.net/api/generate_response"
     : process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_DEV;
 
-console.log("NODE_ENV:", process.env.NODE_ENV);
-console.log("REACT_APP_GENERATE_RESPONSE_ENDPOINT_PROD:", process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_PROD);
-
-
 const App = () => {
   // State
   const [isLoading, setIsLoading] = useState(false);

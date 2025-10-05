@@ -12,7 +12,7 @@ This script sets up a FastAPI application for the NETwork project.
 import os
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from handlers.handler_agent_conversation import AgentConversationHandler
+from NETwork.backend.handlers.handler_agent_conversation import AgentConversationHandler
 
 # Load environment variable for allowed origins
 FRONTEND_URL = os.environ.get("FRONTEND_URL", "http://localhost:3000")

@@ -11,7 +11,14 @@ import PromptForm from "./components/PromptForm";
 import Sidebar from "./components/Sidebar";
 import { Menu } from "lucide-react";
 
+// Define the default conversation object
 const DEFAULT_CONVERSATION = { id: "default", title: "New Chat", messages: [] };
+
+// Define the backend API endpoint for generating a response.
+const REACT_APP_GENERATE_RESPONSE_ENDPOINT =
+  process.env.NODE_ENV === "production"
+    ? process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_PROD
+    : process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_DEV;
 
 const App = () => {
   // State
@@ -162,7 +169,7 @@ const generateResponse = async (conversation, botMessageId) => {
   }));
   try {
     // Make a POST request to the API backend endpoint
-    const res = await fetch(process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_DEV, {
+    const res = await fetch(REACT_APP_GENERATE_RESPONSE_ENDPOINT, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ contents: formattedMessages, thread_id: conversation.thread_id || null }),

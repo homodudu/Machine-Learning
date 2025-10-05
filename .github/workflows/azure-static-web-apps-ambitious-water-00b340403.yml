@@ -1,3 +1,6 @@
+# This GitHub Actions workflow automates the build and deployment process for the "NETwork" frontend react project.
+# It triggers on code changes, installs dependencies, builds the app, and deploys it to Azure Static Web Apps.
+
 name: Azure Static Web Apps CI/CD
 
 on:

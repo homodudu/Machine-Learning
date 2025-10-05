@@ -9,9 +9,13 @@ This script sets up a FastAPI application for the NETwork project.
 """
 
 # Example FastAPI app
+import os
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from handlers.handler_agent_conversation import AgentConversationHandler
+
+# Load environment variable for allowed origins
+FRONTEND_URL = os.environ.get("FRONTEND_URL", "http://localhost:3000")
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -19,7 +23,7 @@ app = FastAPI()
 # Allow CORS for local frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", FRONTEND_URL],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]

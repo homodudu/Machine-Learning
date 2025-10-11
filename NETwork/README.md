@@ -1,5 +1,5 @@
 # NETwork
-![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Poster.png)
+![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Welome%20Poster.png)
 
 ## Overview
 NETwork is a multi-agent chat application delivering tennis instruction, forecasts, betting insights, and strategic recommendations.

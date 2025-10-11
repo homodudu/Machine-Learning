@@ -6,10 +6,12 @@ NETwork is a multi-agent chat application delivering tennis instruction, forecas
 
 ### Process Flow
 NETwork utilises the Microsoft Azure framework to deliver a dynamic web applicatiion.
+
 ![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/Process%20Flow.png)
 
 ### Multi-Agent Solution
-The orchestrated workflow consist of three connected chat-GPT models, each with a content delivery role. 
+The orchestrated workflow consist of three connected Chat-GPT models, each with a content delivery role. 
+
 ![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/Multi-Agent%20Solution.png)
 
 ## Backend
@@ -17,11 +19,11 @@ The backend for the NETwork app is written in Python, managing interactions with
 
 ### Statistical Data
 The backend statistical data is retrieved from the following resource:
-
 https://github.com/JeffSackmann (Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.)
 
 ## Frontend
 The frontend for the NETwork app is built using React, managing client-side interactions with the FastAPI server implemented in the Python backend. It is deployed on Azure as a static web app.
+
 ![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Frontend.png)
 
 ## Author

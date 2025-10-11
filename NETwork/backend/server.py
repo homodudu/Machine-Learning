@@ -10,7 +10,6 @@ This script sets up a FastAPI application for the NETwork project.
 
 # Example FastAPI app
 import os
-import asyncio
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -37,15 +36,12 @@ async def generate_response(request: Request):
     try:
         # Create an instance of the handler
         handler = AgentConversationHandler()
-
         # Get data elements from request
         data = await request.json()
         contents = data["contents"]
         thread = data.get("thread_id")
-
-        # Offload blocking code to thread pool
-        loop = asyncio.get_event_loop()
-        response, thread = await loop.run_in_executor(None, handler.agent_conversation, contents, thread)
+        # Call the agent conversation function
+        response, thread = handler.agent_conversation(contents, thread=thread)
         return {"response": response, "thread_id": getattr(thread, "id", None)}
     except Exception as e:
         import traceback

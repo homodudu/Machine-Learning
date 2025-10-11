@@ -76,7 +76,7 @@ body,
   --color-border-hr: #fff;
   --color-hover-secondary: #39393929;
   --color-hover-secondary-alt: #8997af;
-  --color-text-placeholder: #06130c;
+  --color-text-placeholder: #607068;
   --color-text-primary: #fff;
   --color-text-secondary: #0d0d0d;
 }
@@ -345,7 +345,7 @@ html, body {
 }
 
 .prompt-form .send-prompt-btn:hover {
-  background: #fefefe30;
+  background: #fefefe20;
 }
 
 .prompt-wrapper .prompt-form .prompt-input:valid~.send-prompt-btn {
@@ -354,7 +354,7 @@ html, body {
 
 .prompt-wrapper .send-prompt-btn {
   align-items: center;
-  background: #ffffff15;
+  background: #ffffff03;
   border: none;
   border-radius: 100%;
   color: #fff;

@@ -18,11 +18,11 @@ The backend for the NETwork app is written in Python, managing interactions with
 ### Statistical Data
 The backend statistical data is retrieved from the following resource:
 
-https://github.com/JeffSackmann - Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+https://github.com/JeffSackmann (Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.)
 
 ## Frontend
 The frontend for the NETwork app is built using React, managing client-side interactions with the FastAPI server implemented in the Python backend. It is deployed on Azure as a static web app.
-![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETWork%20Frontend.png)
+![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Frontend.png)
 
 ## Author
 [@homodudu](https://github.com/homodudu)

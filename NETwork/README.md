@@ -1,5 +1,5 @@
 # NETwork
-![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Poster.png)
+![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Welcome%20Poster.png)
 
 ## Overview
 NETwork is a multi-agent chat application delivering tennis instruction, forecasts, betting insights, and strategic recommendations.
@@ -31,6 +31,11 @@ https://github.com/JeffSackmann (Licensed under a Creative Commons Attribution-N
 The frontend for the NETwork app is built using React, managing client-side interactions with the FastAPI server implemented in the Python backend. It is deployed on Azure as a static web app.
 
 ![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Frontend%20React.png)
+
+### Template
+The frontend is developed using a customized version of the Google Gemini-style application template from codingnepalweb.com
+
+https://buymeacoffee.com/codingnepal/e/402506 (Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.)
 
 ## Author
 [@homodudu](https://github.com/homodudu)

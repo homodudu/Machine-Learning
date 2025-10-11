@@ -19,7 +19,7 @@ The backend for the NETwork app is written in Python, managing interactions with
 
 ### AI Foundry
 
-![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/Foundry%20Portal.png)
+![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/Foundry%20Portal.pngd)
 
 The backend serves as an intermediary between the frontend UI and Azure Foundry, relaying user messages to the "Connect" Foundry agent and delivering the agent’s orchestrated response back to the frontend.
 

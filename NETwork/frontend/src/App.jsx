@@ -203,7 +203,7 @@ const generateResponse = async (conversation, botMessageId) => {
   // Render
   return (
     <div className={`app-container ${theme === "light" ? "light-theme" : "dark-theme"}`}>
-      {/* Main div container that wraps the application */}
+      {/* Main div container that wraps application */}
       <div
         //Overlay div container that appears when the sidebar is open and unlocked
         className={`overlay ${isSidebarOpen & !sidebarLocked ? "show" : "hide"}`}

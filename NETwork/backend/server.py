@@ -12,6 +12,7 @@ This script sets up a FastAPI application for the NETwork project.
 import os
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from NETwork.backend.handlers.handler_agent_conversation import AgentConversationHandler
 
 # Load environment variable for allowed origins
@@ -29,11 +30,21 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
+# Create post endpoint for agent conversation
 @app.post("/api/generate_response")
 async def generate_response(request: Request):
-    data = await request.json()
-    handler = AgentConversationHandler()
-    contents = data["contents"]
-    thread = data.get("thread_id")
-    response, thread = handler.agent_conversation(contents, thread=thread)
-    return {"response": response, "thread_id": thread.id}
+    try:
+        data = await request.json()
+        handler = AgentConversationHandler()
+        contents = data["contents"]
+        thread = data.get("thread_id")
+        response, thread = handler.agent_conversation(contents, thread=thread)
+        return {"response": response, "thread_id": getattr(thread, "id", None)}
+    except Exception as e:
+        import traceback
+        print("Error in /api/generate_response:", e)
+        traceback.print_exc()
+        return JSONResponse(
+            status_code=500,
+            content={"Error": str(e)}
+        )

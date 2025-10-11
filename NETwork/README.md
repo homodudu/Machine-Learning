@@ -32,5 +32,10 @@ The frontend for the NETwork app is built using React, managing client-side inte
 
 ![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Frontend%20React.png)
 
+### Template
+The frontend is developed using a customized version of the Google Gemini-style application template from codingnepalweb.com
+
+https://buymeacoffee.com/codingnepal/e/402506 (Licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.)
+
 ## Author
 [@homodudu](https://github.com/homodudu)

@@ -20,9 +20,9 @@ body,
 
 :root {
   --color-action-primary: #4a3304;
-  --color-bg-button-primary: #0a1311;
+  --color-bg-button-primary: #0b1713;
   --color-bg-primary: #000;
-  --color-bg-secondary: #0a1311;
+  --color-bg-secondary: #0b1713;
   --color-bg-sidebar: #1e1d1d64;
   --color-border-hr: #000;
   --color-error-text: #690e17;
@@ -70,13 +70,13 @@ body,
 
 .app-container.light-theme {
   --color-bg-primary: #ffffff;
-  --color-bg-button-primary: #2f2f2f;
-  --color-bg-secondary: #2f2f2f;
-  --color-bg-sidebar: #0a1311;
+  --color-bg-button-primary: #1f1d1d;
+  --color-bg-secondary: #1f1d1d;
+  --color-bg-sidebar: #0b1713;
   --color-border-hr: #fff;
   --color-hover-secondary: #39393929;
   --color-hover-secondary-alt: #8997af;
-  --color-text-placeholder: #606964;
+  --color-text-placeholder: #06130c;
   --color-text-primary: #fff;
   --color-text-secondary: #0d0d0d;
 }

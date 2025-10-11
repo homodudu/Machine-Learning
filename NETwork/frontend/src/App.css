@@ -20,7 +20,7 @@ body,
 
 :root {
   --color-action-primary: #4a3304;
-  --color-bg-button-primary: #242222;
+  --color-bg-button-primary: #0a1311;
   --color-bg-primary: #000;
   --color-bg-secondary: #0a1311;
   --color-bg-sidebar: #1e1d1d64;
@@ -28,7 +28,7 @@ body,
   --color-error-text: #690e17;
   --color-hover-secondary: #33435b3b;
   --color-hover-secondary-alt: #8997af;
-  --color-text-placeholder: #A0B1CF;
+  --color-text-placeholder: #535d6d;
   --color-text-primary: #EDF3FF;
   --color-text-secondary: #D7E5FF;
   --sidebar-closed-width: 110px;
@@ -70,12 +70,13 @@ body,
 
 .app-container.light-theme {
   --color-bg-primary: #ffffff;
+  --color-bg-button-primary: #2f2f2f;
   --color-bg-secondary: #2f2f2f;
   --color-bg-sidebar: #0a1311;
   --color-border-hr: #fff;
   --color-hover-secondary: #39393929;
   --color-hover-secondary-alt: #8997af;
-  --color-text-placeholder: #999;
+  --color-text-placeholder: #606964;
   --color-text-primary: #fff;
   --color-text-secondary: #0d0d0d;
 }
@@ -282,7 +283,7 @@ html, body {
 }
 
 .messages-container .user-message .text {
-  background: var(--color-bg-secondary);
+  background: var(--color-bg-sidebar);
   border-radius: 13px 13px 3px 13px;
   max-width: 65%;
   padding: 12px 16px;
@@ -313,7 +314,8 @@ html, body {
 
 .prompt-container .prompt-form {
   align-items: center;
-  background: var(--color-bg-secondary);
+  background: var(--color-bg-sidebar);
+  background: var();
   border-radius: 10px;
   display: flex;
   min-height: 50px;

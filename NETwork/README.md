@@ -30,7 +30,7 @@ https://github.com/JeffSackmann (Licensed under a Creative Commons Attribution-N
 ## Frontend
 The frontend for the NETwork app is built using React, managing client-side interactions with the FastAPI server implemented in the Python backend. It is deployed on Azure as a static web app.
 
-![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Frontend.pngd)
+![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/NETwork%20Frontend.png)
 
 ## Author
 [@homodudu](https://github.com/homodudu)

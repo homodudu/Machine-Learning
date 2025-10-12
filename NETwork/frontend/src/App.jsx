@@ -179,7 +179,7 @@ const generateResponse = async (conversation, botMessageId) => {
     const threadId = data.thread_id; // Extract thread ID from response
     console.log("Agent API response:", data);
 
-    // Update the conversation state with the new thread ID
+    // Update the conversation state with new thread ID
     setConversations((prev) =>
       prev.map((conv) =>
         conv.id === conversation.id

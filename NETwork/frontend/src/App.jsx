@@ -61,10 +61,6 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem("conversations", JSON.stringify(conversations));
-    // If there is only one conversation set it as active.
-    if (conversations.length === 1){
-      setActiveConversation(conversations[0].id);
-    }
   }, [conversations]);
 
   useEffect(() => {

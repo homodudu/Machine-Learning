@@ -32,17 +32,17 @@ const Sidebar = ({
 const deleteConversation = (id) => {
   setConversations(prev => {
     const updated = prev.filter(conv => conv.id !== id);
-    // If the deleted conversation was active, set a new active conversation
+
+    if (updated.length === 0) {
+      // No conversations left, create/reset to default
+      const defaultConv = { id: "default", title: "New Chat", messages: [] };
+      setActiveConversation("default");
+      return [defaultConv];
+    }
+
+    // If the deleted conversation was active, set the most recent as active
     if (activeConversation === id) {
-      if (updated.length > 0) {
-        setActiveConversation(updated[0].id);
-      } else {
-        // No conversations left, create/reset to default
-        const defaultConv = { id: "default", title: "New Chat", messages: [] };
-        setConversations([defaultConv]);
-        setActiveConversation("default");
-        return [defaultConv];
-      }
+      setActiveConversation(updated[updated.length - 1].id);
     }
     return updated;
   });

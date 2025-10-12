@@ -17,7 +17,7 @@ const DEFAULT_CONVERSATION = { id: "default", title: "New Chat", messages: [] };
 // Define the backend API endpoint for generating a response.
 const REACT_APP_GENERATE_RESPONSE_ENDPOINT =
   process.env.NODE_ENV === "production"
-    ? process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_PROD
+    ? "https://network-api-d8dxcph2d8b9csfj.westeurope-01.azurewebsites.net/api/generate_response"
     : process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_DEV;
 
 const App = () => {
@@ -169,8 +169,6 @@ const generateResponse = async (conversation, botMessageId) => {
   }));
   try {
     // Make a POST request to the API backend endpoint
-    console.log("Prod API Endpoint:", process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_PROD)
-    console.log("Current API Endpoint:", process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT)
     const res = await fetch(REACT_APP_GENERATE_RESPONSE_ENDPOINT, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

@@ -40,8 +40,8 @@ const deleteConversation = (id) => {
       return [defaultConv];
     }
 
-    // If the deleted conversation was active, set the most recent as active
-    if (activeConversation === id) {
+    // If the active conversation no longer exists, set the most recent as active
+    if (!updated.some(conv => conv.id === activeConversation)) {
       setActiveConversation(updated[updated.length - 1].id);
     }
     return updated;

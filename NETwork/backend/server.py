@@ -13,7 +13,7 @@ import os
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from NETwork.backend.handlers.handler_agent_conversation import AgentConversationHandler
+from handlers.handler_agent_conversation import AgentConversationHandler
 
 # Load environment variable for allowed origins
 FRONTEND_URL = os.environ.get("FRONTEND_URL", "http://localhost:3000")

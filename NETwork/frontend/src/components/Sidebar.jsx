@@ -40,9 +40,14 @@ const deleteConversation = (id) => {
       return [defaultConv];
     }
 
-    // Still conversation items left after deletion, set the first one as active
-    if (updated.length > 0) {
+    // If the deleted conversation was the active one, set the first as active
+    else if (activeConversation === id && updated.length > 0) {
       setActiveConversation(updated[0].id);
+    }
+
+    // If the deleted conversation was not the active one, set the current as active
+    else if (activeConversation !== id && updated.length > 0) {
+      setActiveConversation(activeConversation);
     }
     return updated;
   });

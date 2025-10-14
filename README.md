@@ -1,7 +1,7 @@
 # Machine Learning Projects
 
 ## Data Science: Holiday Spend Forecaster
-An optimized random forest pipeline for forecasting and visualizing U.S. holiday consumer spending
+An optimized random forest pipeline to forecast and visualize U.S. holiday consumer spending
 using data retrieved from a public API.
 
 - [Holiday Spend](https://github.com/homodudu/Machine-Learning/tree/main/Holiday%20Spend%20Project)

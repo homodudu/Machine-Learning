@@ -298,7 +298,7 @@ html, body {
 .prompt-container {
   background: var(--color-bg-primary);
   left: 0;
-  padding: 20px 0 0 0;
+  padding: 20px 0 20px 0;
   bottom: 0;
   width: 100%;
   z-index: 10;
@@ -627,13 +627,15 @@ html, body {
     left: 0;
   }
   .welcome-heading {
-    font-size: 1.8rem;
+    font-size: 3vw;
+    margin-top: 0.5vw;
   }
   .welcome-logo {
-    height: 60px;
-    width: 60px;
+    height: auto;
+    width: auto;
+    max-width: 10vw;
   }
   .welcome-text {
-    font-size: 1rem;
+    font-size: 2vw;
   }
 }

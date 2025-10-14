@@ -34,15 +34,15 @@ const deleteConversation = (id) => {
     const updated = prev.filter(conv => conv.id !== id);
 
     if (updated.length === 0) {
-      // No conversations left, create/reset to default
+      // No conversation items left after deletion, create/reset to default
       const defaultConv = { id: "default", title: "New Chat", messages: [] };
       setActiveConversation("default");
       return [defaultConv];
     }
 
-    // If the active conversation no longer exists, set the most recent as active
-    if (!updated.some(conv => conv.id === activeConversation)) {
-      setActiveConversation(updated[updated.length - 1].id);
+    // Still conversation items left after deletion, set the first one as active
+    if (updated.length > 0) {
+      setActiveConversation(updated[0].id);
     }
     return updated;
   });

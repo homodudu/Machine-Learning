@@ -30,7 +30,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-# Create post endpoint for agent conversation
+# Create post endpoint for the agent conversation
 @app.post("/api/generate_response")
 async def generate_response(request: Request):
     try:

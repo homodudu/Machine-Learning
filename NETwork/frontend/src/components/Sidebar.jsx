@@ -31,25 +31,28 @@ const Sidebar = ({
 
 const deleteConversation = (id) => {
   setConversations(prev => {
-    const updated = prev.filter(conv => conv.id !== id);
+    const updatedConvs = prev.filter(conv => conv.id !== id);
+    const activeIndex = conversations.findIndex(conv => conv.id === activeConversation);
 
-    if (updated.length === 0) {
+    if (updatedConvs.length === 0) {
       // No conversation items left after deletion, create/reset to default
       const defaultConv = { id: "default", title: "New Chat", messages: [] };
       setActiveConversation("default");
       return [defaultConv];
     }
 
-    // If the deleted conversation was the active one, set the first as active
-    else if (activeConversation === id && updated.length > 0) {
-      setActiveConversation(updated[0].id);
+    // First conversation deleted, activate the next in list
+    if (updatedConvs.length > 0 && activeIndex === 0) {
+      setActiveConversation(updatedConvs[activeIndex].id);
     }
 
-    // If the deleted conversation was not the active one, set the current as active
-    else if (activeConversation !== id && updated.length > 0) {
-      setActiveConversation(activeConversation);
+    // Current conversation deleted, activate previous in list
+    if (updatedConvs.length > 0 && activeIndex > 0) {
+      setActiveConversation(updatedConvs[activeIndex-1].id);
     }
-    return updated;
+
+    //Non-active conversation deleted, do nothing
+    return updatedConvs;
   });
 };
 

@@ -338,6 +338,7 @@ html, body {
   resize: none !important;
   width: 94%;
   transform: height 0.2s;
+  overflow: hidden;
 }
 
 .prompt-form .prompt-input::placeholder {
@@ -528,8 +529,8 @@ html, body {
   max-width: 100vw;
   padding: 2vw;
   text-align: center;
-  width: 100vw;
-  min-height: 60vh;
+  width: auto;
+  min-height: auto;
 }
 
 .welcome-logo-wrapper {
@@ -538,7 +539,7 @@ html, body {
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  width: auto;
+  width: 100%;
   max-width: 40vw;
   margin: 0 auto;
   overflow: hidden;
@@ -558,12 +559,13 @@ html, body {
   font-family: "Oxanium", sans-serif;
   font-size: 4vw;
   font-weight: 400;
-  position: flex;
+  position: static;
   text-align: center;
   top: 75%;
-  transform: translate(0, -200%);
+  /* transform: translate(0, -200%); */
   max-width: 100vw;
   width: auto;
+  margin-top: -7vw;
 
 }
 

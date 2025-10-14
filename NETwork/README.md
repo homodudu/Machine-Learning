@@ -15,7 +15,7 @@ The orchestrated workflow consist of three connected Chat-GPT models, each with 
 ![alt text](https://github.com/homodudu/Machine-Learning/blob/main/NETwork/_documentation/Multi-Agent%20Solution.png)
 
 ## Backend
-The backend for the NETwork app is written in Python, managing interactions with Azure resources the Azure SDK API. The python code implements a FastAPI server to interact with the React frontend. It is deployed on Azure as a web app. 
+The backend for the NETwork app is written in Python, managing interactions with Azure resources via the Azure SDK API. The python code implements a FastAPI server to interact with the React frontend. It is deployed on Azure as a web app. 
 
 ### AI Foundry
 

@@ -28,7 +28,7 @@ body,
   --color-error-text: #690e17;
   --color-hover-secondary: #33435b3b;
   --color-hover-secondary-alt: #8997af;
-  --color-text-placeholder: #535d6d;
+  --color-text-placeholder: #4c4e52;
   --color-text-primary: #EDF3FF;
   --color-text-secondary: #D7E5FF;
   --sidebar-closed-width: 110px;
@@ -69,7 +69,7 @@ body,
 }
 
 .app-container.light-theme {
-  --color-bg-primary: #ffffff;
+  --color-bg-primary: #efebe7;
   --color-bg-button-primary: #1f1d1d;
   --color-bg-secondary: #1f1d1d;
   --color-bg-sidebar: #142821;
@@ -549,7 +549,7 @@ html, body {
 .welcome-logo {
   width: 30vw;
   height: auto;
-  max-width:400px;
+  max-width:350px;
   margin: 0 auto
 }
 

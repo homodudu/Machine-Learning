@@ -540,9 +540,10 @@ html, body {
   justify-content: flex-start;
   position: relative;
   width: 50vw;
+  max-width: 400px;
   height: auto;
   margin: 0 auto;
-  transform: translateY(10%);
+  transform: none;
   overflow: hidden;
 }
 
@@ -550,7 +551,7 @@ html, body {
   width: 30vw;
   height: auto;
   max-width:350px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .welcome-heading {
@@ -574,7 +575,7 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1vw;
-  max-width: 60vw;
+  max-width: 40vw;
   position: relative;
   text-align: center;
   width: 100%;

@@ -607,14 +607,26 @@ html, body {
   .main-header {
     display: block;
   }
+
   .messages-container {
     margin-bottom: auto;
     padding-top: 20px;
   }
+
   .overlay.show {
     opacity: 1;
     pointer-events: auto;
   }
+
+  .prompt-container{
+    min-height: 20vh;
+  }
+
+  .prompt-form .prompt-input {
+    width: 80%;
+    overflow: hidden;
+  }
+
   .sidebar {
     height: 100%;
     left: auto;
@@ -674,4 +686,5 @@ html, body {
   .welcome-text {
     font-size: 1vw;
   }
+
 }

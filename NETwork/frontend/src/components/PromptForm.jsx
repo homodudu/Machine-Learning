@@ -100,7 +100,7 @@ const PromptForm = ({
       <textarea
         id="prompt-input"
         name="prompt"
-        placeholder="Message the NETwork..."
+        placeholder="Message NETwork..."
         autoComplete="off"
         className="prompt-input"
         value={promptText}

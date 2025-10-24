@@ -51,7 +51,6 @@ const App = () => {
   );
 
   // Refs
-  const typingInterval = useRef(null);
   const messagesContainerRef = useRef(null);
 
   // Effects
@@ -90,60 +89,21 @@ const App = () => {
     }
   };
 
-  const typingEffect = (text, messageId) => {
-    let textElement = document.querySelector(`#${messageId} .text`);
-    if (!textElement) return;
+  const displayBotMessage = (text, messageId) => {
     setConversations((prev) =>
       prev.map((conv) =>
         conv.id === activeConversation
           ? {
               ...conv,
               messages: conv.messages.map((msg) =>
-                msg.id === messageId ? { ...msg, content: "", loading: true } : msg
+                msg.id === messageId ? { ...msg, content: text, loading: false } : msg
               ),
             }
           : conv
       )
     );
-    textElement.textContent = "";
-    const words = text.split(" ");
-    let wordIndex = 0;
-    let currentText = "";
-    clearInterval(typingInterval.current);
-    typingInterval.current = setInterval(() => {
-      if (wordIndex < words.length) {
-        currentText += (wordIndex === 0 ? "" : " ") + words[wordIndex++];
-        textElement.textContent = currentText;
-        setConversations((prev) =>
-          prev.map((conv) =>
-            conv.id === activeConversation
-              ? {
-                  ...conv,
-                  messages: conv.messages.map((msg) =>
-                    msg.id === messageId ? { ...msg, content: currentText, loading: true } : msg
-                  ),
-                }
-              : conv
-          )
-        );
-        scrollToBottom();
-      } else {
-        clearInterval(typingInterval.current);
-        setConversations((prev) =>
-          prev.map((conv) =>
-            conv.id === activeConversation
-              ? {
-                  ...conv,
-                  messages: conv.messages.map((msg) =>
-                    msg.id === messageId ? { ...msg, content: currentText, loading: false } : msg
-                  ),
-                }
-              : conv
-          )
-        );
-        setIsLoading(false);
-      }
-    }, 40);
+    scrollToBottom();
+    setIsLoading(false);
   };
 
   const updateBotMessage = (botId, content, isError = false) => {
@@ -193,7 +153,7 @@ const generateResponse = async (conversation, botMessageId) => {
 
     // Handle the response text
     const responseText = typeof data.response === "string" ? data.response.trim(): "No response from agent.";
-    typingEffect(responseText, botMessageId); // Display the response with a typing effect
+    displayBotMessage(responseText, botMessageId); // Display the response
   } catch (error) {
     setIsLoading(false); // Stop loading state
     updateBotMessage(botMessageId, error.message, true); // Update the bot message with the error

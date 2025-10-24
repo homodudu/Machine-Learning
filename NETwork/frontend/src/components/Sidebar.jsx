@@ -70,7 +70,14 @@ const deleteConversation = (id) => {
           title="Toggle the sidebar pin."
           onClick={() => {
             setIsSidebarOpen(true);
-            setSidebarLocked((prev) => !prev);
+            // If on small screens, untoggle the sidebar when the menu/pin is pressed
+            if (window.innerWidth<=768){
+              setIsSidebarOpen(false);
+              setSidebarLocked(false);
+            }
+            else{
+              setSidebarLocked((prev) => !prev);
+            }
           }}
         >
           <Pin size={22} />
@@ -81,7 +88,7 @@ const deleteConversation = (id) => {
             onClick={createNewConversation}
           >
           <Plus size={20} />
-          <span>New chat</span>
+          <span>New</span>
         </button>
       </div>
       {/* Conversation List */}

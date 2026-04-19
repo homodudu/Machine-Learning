@@ -3,7 +3,7 @@
     {
       "route": "/api/*",
       "methods": [
-        "post"
+        "POST"
       ],
       "rewrite": "https://network-api-d8dxcph2d8b9csfj.westeurope-01.azurewebsites.net/api/"
     }

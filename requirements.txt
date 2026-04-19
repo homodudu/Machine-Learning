@@ -4,6 +4,7 @@ azure-search-documents
 azure-storage-blob
 azure-identity
 azure-ai-projects
+azure-ai-agents
 openai
 python-dotenv
 PyGithub

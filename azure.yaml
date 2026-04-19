@@ -1,6 +1,7 @@
 # Azure App Service configuration for a Python app in a subdirectory
 
-app_location: NETwork              # Path to  app code and requirements.txt
+name: network-api
+app_location: NETwork              # Path to app code and requirements.txt
 api_location: NETwork/backend      # Path to API code (if needed)
 output_location: build             # Not required for backend-only, but can be set
 

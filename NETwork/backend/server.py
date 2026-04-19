@@ -11,6 +11,10 @@ This script sets up a FastAPI application for the NETwork project.
 
 import sys
 import os
+
+# Add the current directory to the system path to allow imports from utils
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse

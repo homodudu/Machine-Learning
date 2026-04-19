@@ -15,8 +15,7 @@ import { Menu } from "lucide-react";
 const DEFAULT_CONVERSATION = { id: "default", title: "New Chat", messages: [] };
 
 // Define the backend API endpoint for generating a response.
-const REACT_APP_GENERATE_RESPONSE_ENDPOINT =
-  process.env.NODE_ENV = "/api/generate_response";
+const REACT_APP_GENERATE_RESPONSE_ENDPOINT = "/api/generate_response";
 
 const App = () => {
   // State

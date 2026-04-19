@@ -20,9 +20,6 @@ const REACT_APP_GENERATE_RESPONSE_ENDPOINT =
     ? process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_PROD
     : process.env.REACT_APP_GENERATE_RESPONSE_ENDPOINT_DEV;
 
-console.log("API Endpoint:", REACT_APP_GENERATE_RESPONSE_ENDPOINT);
-console.log("Test Var:", process.env.REACT_APP_TEST_VAR)
-
 const App = () => {
   // State
   const [isLoading, setIsLoading] = useState(false);

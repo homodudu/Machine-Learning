@@ -8,8 +8,13 @@ This script sets up a FastAPI application for the NETwork project.
   passes it to the agent_conversation function, and returns the response.
 """
 
-# Example FastAPI app
+
+import sys
 import os
+
+## Ensure the backend directory is in sys.path to allow imports from handlers and other modules
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse

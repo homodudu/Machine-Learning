@@ -1,14 +1,14 @@
 
-azure-core
-azure-search-documents
-azure-storage-blob
-azure-identity
-azure-ai-projects
-azure-ai-agents
-openai
-python-dotenv
-PyGithub
-requests
-pandas
-fastapi
-uvicorn
+azure-core==1.35.0
+azure-search-documents==11.5.2
+azure-storage-blob==12.25.1
+azure-identity==1.23.0
+azure-ai-projects==1.0.0
+azure-ai-agents==1.0.2
+openai==1.93.0
+python-dotenv==1.1.1
+PyGithub==2.6.1
+requests==2.32.4
+pandas==1.5.0
+fastapi==0.116.1
+uvicorn==0.37.0
